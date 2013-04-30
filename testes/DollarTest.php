@@ -5,8 +5,8 @@ include_once './config/autoload.php';
 * @abstract   Classe de teste da moeda Dollar
 * @autor      Elton D. de Oliveira
 * @name       DollarTest
-* @package    Moedas
-* @subpackage Dollar
+* @package    Testes
+* @subpackage TestesDollar
 * @version    1.0
 * @copyright  GPL (http://www.gnu.org/licenses/gpl.html)
 */
