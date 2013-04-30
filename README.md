@@ -4,6 +4,7 @@ Qualidade de código em PHP
 Projeto de estudo das principais ferramentas de qualidade de código para PHP.
 Esse projeto irá utilizar as seguintes ferramentas:
 
+
 1 - PHP Unit: Framework para a criação de testes unitários.
     https://github.com/sebastianbergmann/phpunit/
 2 - PHP Code Coverage: Ferramenta para gerar relatórios sobre a cobertura de código

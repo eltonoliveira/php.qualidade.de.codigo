@@ -1,0 +1,6 @@
+----- PHP Unit
+
+--- Para gerar a versão em um relatório HTML e também a cobertura de código em HTML. 
+phpunit --coverage-html testes/coverage/ --testdox-html testes/index.html testes/
+
+phpunit --testdox testes/
