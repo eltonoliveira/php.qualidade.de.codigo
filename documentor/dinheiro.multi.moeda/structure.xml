@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project version="2.0.0a12" title="">
+  <file path="Dollar.php" hash="c72d3ab38013add5277f70f3817c76da" package="Default">
+    <class final="false" abstract="false" namespace="global" line="18" package="Moedas\Dollar">
+      <extends/>
+      <name>Dollar</name>
+      <full_name>\Dollar</full_name>
+      <docblock line="3">
+        <description>Classe para representar o objeto dollar.</description>
+        <long-description></long-description>
+        <tag line="3" name="abstract" description="A classe Dollar é uma classe criada para representar o objeto&#13;&#10;dollar. Ela será criada de acordo com as especificações do livro TDD:&#13;&#10;Desenvolvimento Guiado por testes, do Kent Beck."/>
+        <tag line="3" name="name" description="Dollar"/>
+        <tag line="3" name="category" description="Aplicacao"/>
+        <tag line="3" name="package" description="Moedas"/>
+        <tag line="3" name="subpackage" description="Dollar"/>
+        <tag line="3" name="author" description="Elton D. de Oliveira &lt;elton.douglas.oliv@gmail.com&gt;"/>
+        <tag line="3" name="license" description="GPL http://www.gnu.org/licenses/gpl.html"/>
+        <tag line="3" name="link" description="documentação" link="Ver"/>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="23" namespace="global" package="Default">
+        <name>$quantidade</name>
+        <default></default>
+        <docblock line="20">
+          <description></description>
+          <long-description></long-description>
+          <tag line="20" name="var" description="Valor que irá representar a quantidade de dollares do objeto." type="int">
+            <type by_reference="false">int</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="36" package="Moedas\Dollar">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="25">
+          <description>Construtor</description>
+          <long-description></long-description>
+          <tag line="25" name="param" description="Valor com que irá definir quantos dollares o o&#13;&#10;objeto criado irá conter." type="int" variable="$quantidade">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="25" name="name" description="__construct"/>
+          <tag line="25" name="access" description="public"/>
+          <tag line="25" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="36">
+          <name>$quantidade</name>
+          <default>1</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="51" package="Moedas\Dollar">
+        <name>multiplicarPor</name>
+        <full_name>multiplicarPor</full_name>
+        <docblock line="41">
+          <description>Multiplica o a quantidade do objeto Dollar por um multiplicador.</description>
+          <long-description></long-description>
+          <tag line="41" name="param" description="Valor pelo qual a quantidade de dollar será&#13;&#10;multiplicada." type="int" variable="$multiplicador">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="41" name="name" description="multiplicarPor"/>
+          <tag line="41" name="access" description="public"/>
+          <tag line="41" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="51">
+          <name>$multiplicador</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Dollar.php</error>
+    </parse_markers>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <package name="Moedas" full_name="Moedas">
+    <package name="Dollar" full_name="Moedas\Dollar"/>
+  </package>
+  <namespace name="global" full_name="global"/>
+  <marker count="0">todo</marker>
+  <marker count="0">fixme</marker>
+  <deprecated count="0"/>
+</project>

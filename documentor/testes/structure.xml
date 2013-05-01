@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project version="2.0.0a12" title="">
+  <file path="DollarTest.php" hash="f6f02692d5884657cfc44ebff67e39c6" package="Default">
+    <include line="2" type="Require Once" package="Default">
+      <name>./config/autoload.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="global" line="15" package="Moedas\Dollar">
+      <extends>\PHPUnit_FrameWork_TestCase</extends>
+      <name>DollarTest</name>
+      <full_name>\DollarTest</full_name>
+      <docblock line="4">
+        <description>Classe de teste da moeda Dollar</description>
+        <long-description></long-description>
+        <tag line="4" name="name" description="DollarTest"/>
+        <tag line="4" name="category" description="Testes"/>
+        <tag line="4" name="package" description="Moedas"/>
+        <tag line="4" name="subpackage" description="Dollar"/>
+        <tag line="4" name="author" description="Elton D. de Oliveira &lt;elton.douglas.oliv@gmail.com&gt;"/>
+        <tag line="4" name="license" description="GPL http://www.gnu.org/licenses/gpl.html"/>
+        <tag line="4" name="link" description="documentação" link="Ver"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Moedas\Dollar">
+        <name>provedorDoTesteMultiplicarDollarPorUmEscalar</name>
+        <full_name>provedorDoTesteMultiplicarDollarPorUmEscalar</full_name>
+        <docblock line="17">
+          <description>Provedor dos dados do teste testMultiplicarDollarPorUmEscalar.</description>
+          <long-description></long-description>
+          <tag line="17" name="name" description="provedorDoTesteMultiplicarDollarPorUmEscalar"/>
+          <tag line="17" name="access" description="public"/>
+          <tag line="17" name="return" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="49" package="Moedas\Dollar">
+        <name>testMultiplicarDollarPorUmEscalar</name>
+        <full_name>testMultiplicarDollarPorUmEscalar</full_name>
+        <docblock line="36">
+          <description>O objetivo do teste é validar se é possível multiplicar um Dollar por um
+escalar qualquer.</description>
+          <long-description></long-description>
+          <tag line="36" name="param" description="Quantidade com a qual o Dollar será criado." type="int" variable="$quantidade">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="36" name="param" description="Valor pelo qual o Dollar criado será multiplicado" type="int" variable="$multiplicador">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="36" name="param" description="Resultado da multiplicação" type="int" variable="$resultado">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="36" name="dataProvider" description="provedorDoTesteMultiplicarDollarPorUmEscalar"/>
+          <tag line="36" name="name" description="testMultiplicarDollarPorUmEscalar"/>
+          <tag line="36" name="access" description="public"/>
+          <tag line="36" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="49">
+          <name>$quantidade</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="49">
+          <name>$multiplicador</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="49">
+          <name>$resultado</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file DollarTest.php</error>
+    </parse_markers>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <package name="Moedas" full_name="Moedas">
+    <package name="Dollar" full_name="Moedas\Dollar"/>
+  </package>
+  <namespace name="global" full_name="global"/>
+  <marker count="0">todo</marker>
+  <marker count="0">fixme</marker>
+  <deprecated count="0"/>
+</project>

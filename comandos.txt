@@ -1,6 +1,51 @@
------ PHP Unit
+----- PHP Unit --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 --- Para gerar a versão em um relatório HTML e também a cobertura de código em HTML. 
 phpunit --coverage-html testes/coverage/ --testdox-html testes/index.html testes/
 
+ou
+
 phpunit --testdox testes/
+
+
+--- PHP Mess Detector --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+phpmd ./ html --reportfile phpmd/relatorio.html unusedcode, controversial, design, naming, codesize
+
+
+
+--- PHP_CodeSniffer --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+phpcs -s --report=xml dinheiro.multi.moeda/  --report-file=code.sniffer/dinheiro.multi.moeda/relatorio.xml
+
+e
+
+phpcs -s --report=xml testes/  --report-file=code.sniffer/testes/relatorio.xml
+
+
+
+--- PHP_Depend -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+pdepend --summary-xml=pdepend/dinheiro.multi.moeda/summary.xml --jdepend-chart=pdepend/dinheiro.multi.moeda/jdepend.svg --overview-pyramid=pdepend/dinheiro.multi.moeda/pyramid.svg dinheiro.multi.moeda/
+
+e
+
+pdepend --summary-xml=pdepend/testes/summary.xml --jdepend-chart=pdepend/testes/jdepend.svg --overview-pyramid=pdepend/testes/pyramid.svg testes/
+
+
+--- PHP Documentator
+
+
+phpdoc -d dinheiro.multi.moeda/ -t documentor/dinheiro.multi.moeda/ --template responsive
+
+e
+
+phpdoc -d testes/ -t documentor/testes/ --template responsive
+
+
+
+
+
+
+
+

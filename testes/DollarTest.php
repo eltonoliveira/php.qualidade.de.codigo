@@ -1,28 +1,56 @@
 <?php
-include_once './config/autoload.php';
+require_once './config/autoload.php';
 
 /**
-* @abstract   Classe de teste da moeda Dollar
-* @autor      Elton D. de Oliveira
+* Classe de teste da moeda Dollar
+*
 * @name       DollarTest
-* @package    Testes
-* @subpackage TestesDollar
-* @version    1.0
-* @copyright  GPL (http://www.gnu.org/licenses/gpl.html)
+* @category   Testes
+* @package    Moedas
+* @subpackage Dollar
+* @author     Elton D. de Oliveira <elton.douglas.oliv@gmail.com>
+* @license    GPL http://www.gnu.org/licenses/gpl.html
+* @link       Ver documentação
 */
 class DollarTest extends PHPUnit_FrameWork_TestCase
 {
 	/**
-	* O objetivo do teste é validar se é possível multiplicar um Dollar por um escalar qualquer.
+	* Provedor dos dados do teste testMultiplicarDollarPorUmEscalar.
 	*
-	* @name   testMultiplicarDollarPorUmEscalar
+	* @name   provedorDoTesteMultiplicarDollarPorUmEscalar
 	* @access public
+	* @return array
+	*/
+	public function provedorDoTesteMultiplicarDollarPorUmEscalar()
+	{
+		return [
+			'0 dollar multiplicado por 0 e igual a 0 dollar' => [0, 0, 0],
+			'1 dollar multiplicado por 1 e igual a 1 dollar' => [0, 0, 0],
+			PHP_INT_MAX . ' dollares multiplicados por 1 e igual a ' . PHP_INT_MAX . ' dollares' => 
+				[PHP_INT_MAX , 1, PHP_INT_MAX],
+			PHP_INT_MAX . ' dollares multiplicados por 2 e igual a ' . PHP_INT_MAX * 2 . ' dollares' => 
+				[PHP_INT_MAX , 2, PHP_INT_MAX * 2],
+		];
+	}
+
+	/**
+	* O objetivo do teste é validar se é possível multiplicar um Dollar por um 
+	* escalar qualquer.
+	*
+	* @param int $quantidade    Quantidade com a qual o Dollar será criado.
+	* @param int $multiplicador Valor pelo qual o Dollar criado será multiplicado
+	* @param int $resultado     Resultado da multiplicação
+	*
+	* @dataProvider provedorDoTesteMultiplicarDollarPorUmEscalar
+	* @name   testMultiplicarDollarPorUmEscalar
+    * @access public
 	* @return void
 	*/
-	public function testMultiplicarDollarPorUmEscalar()
+	public function testMultiplicarDollarPorUmEscalar($quantidade, $multiplicador, $resultado) 
 	{
-		$dollar = new Dollar(5);
-		$dollar->multiplicarPor(2);
-		self::assertEquals(10, $dollar->quantidade);
+		$dollar = new Dollar($quantidade);
+		self::assertEquals(
+			$resultado, $dollar->multiplicarPor($multiplicador)->quantidade
+		);
 	}
 }
