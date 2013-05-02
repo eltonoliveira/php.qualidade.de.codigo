@@ -1,0 +1,9 @@
+Tarefas:
+
+1) $5 + 10 CHF (Franco Suíço) = $10 se a taxa é 2:1
+2) 5 * 2 = $10 -> OK
+3) Tornar 'quantidade' privada
+4) Efeitos colaterais em Dollar? -> OK
+5) Arredondamento de dinheiro?
+6) Criacao de um método equals()
+7) hashCode()

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project version="2.0.0a12" title="">
-  <file path="DollarTest.php" hash="f6f02692d5884657cfc44ebff67e39c6" package="Default">
+  <file path="DollarTest.php" hash="874083cb22613a875a7ad26d6c1283a4" package="Default">
     <include line="2" type="Require Once" package="Default">
       <name>./config/autoload.php</name>
     </include>
@@ -32,40 +32,40 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="49" package="Moedas\Dollar">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="51" package="Moedas\Dollar">
         <name>testMultiplicarDollarPorUmEscalar</name>
         <full_name>testMultiplicarDollarPorUmEscalar</full_name>
-        <docblock line="36">
+        <docblock line="38">
           <description>O objetivo do teste é validar se é possível multiplicar um Dollar por um
 escalar qualquer.</description>
           <long-description></long-description>
-          <tag line="36" name="param" description="Quantidade com a qual o Dollar será criado." type="int" variable="$quantidade">
+          <tag line="38" name="param" description="Quantidade com a qual o Dollar será criado." type="int" variable="$quantidade">
             <type by_reference="false">int</type>
           </tag>
-          <tag line="36" name="param" description="Valor pelo qual o Dollar criado será multiplicado" type="int" variable="$multiplicador">
+          <tag line="38" name="param" description="Valor pelo qual o Dollar criado será multiplicado" type="int" variable="$multiplicador">
             <type by_reference="false">int</type>
           </tag>
-          <tag line="36" name="param" description="Resultado da multiplicação" type="int" variable="$resultado">
+          <tag line="38" name="param" description="Resultado da multiplicação" type="int" variable="$resultado">
             <type by_reference="false">int</type>
           </tag>
-          <tag line="36" name="dataProvider" description="provedorDoTesteMultiplicarDollarPorUmEscalar"/>
-          <tag line="36" name="name" description="testMultiplicarDollarPorUmEscalar"/>
-          <tag line="36" name="access" description="public"/>
-          <tag line="36" name="return" description="" type="void">
+          <tag line="38" name="dataProvider" description="provedorDoTesteMultiplicarDollarPorUmEscalar"/>
+          <tag line="38" name="name" description="testMultiplicarDollarPorUmEscalar"/>
+          <tag line="38" name="access" description="public"/>
+          <tag line="38" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>
-        <argument line="49">
+        <argument line="51">
           <name>$quantidade</name>
           <default></default>
           <type/>
         </argument>
-        <argument line="49">
+        <argument line="51">
           <name>$multiplicador</name>
           <default></default>
           <type/>
         </argument>
-        <argument line="49">
+        <argument line="51">
           <name>$resultado</name>
           <default></default>
           <type/>

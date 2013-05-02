@@ -50,7 +50,6 @@ class Dollar
 	*/
 	public function multiplicarPor($multiplicador)
 	{
-		$this->quantidade *= $multiplicador;
-		return $this;
+		return new Dollar($this->quantidade * $multiplicador);
 	}
 }

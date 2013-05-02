@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project version="2.0.0a12" title="">
-  <file path="Dollar.php" hash="c72d3ab38013add5277f70f3817c76da" package="Default">
+  <file path="Dollar.php" hash="1a48a0811d869a768dab924e0f282fb9" package="Default">
     <class final="false" abstract="false" namespace="global" line="18" package="Moedas\Dollar">
       <extends/>
       <name>Dollar</name>

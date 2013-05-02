@@ -24,11 +24,13 @@ class DollarTest extends PHPUnit_FrameWork_TestCase
 	public function provedorDoTesteMultiplicarDollarPorUmEscalar()
 	{
 		return [
-			'0 dollar multiplicado por 0 e igual a 0 dollar' => [0, 0, 0],
-			'1 dollar multiplicado por 1 e igual a 1 dollar' => [0, 0, 0],
-			PHP_INT_MAX . ' dollares multiplicados por 1 e igual a ' . PHP_INT_MAX . ' dollares' => 
+			'5 dollares vezes 2 e igual a 10 dollares' => [5, 2, 10],
+			'5 dollares vezes 3 e igual a 15 dollares' => [5, 3, 15],
+			'0 dollar vezes por 0 e igual a 0 dollar' => [0, 0, 0],
+			'1 dollar vezes por 1 e igual a 1 dollar' => [0, 0, 0],
+			PHP_INT_MAX . ' dollares vezes por 1 e igual a ' . PHP_INT_MAX . ' dollares' => 
 				[PHP_INT_MAX , 1, PHP_INT_MAX],
-			PHP_INT_MAX . ' dollares multiplicados por 2 e igual a ' . PHP_INT_MAX * 2 . ' dollares' => 
+			PHP_INT_MAX . ' dollares vezes por 2 e igual a ' . PHP_INT_MAX * 2 . ' dollares' => 
 				[PHP_INT_MAX , 2, PHP_INT_MAX * 2],
 		];
 	}
@@ -48,9 +50,12 @@ class DollarTest extends PHPUnit_FrameWork_TestCase
 	*/
 	public function testMultiplicarDollarPorUmEscalar($quantidade, $multiplicador, $resultado) 
 	{
-		$dollar = new Dollar($quantidade);
-		self::assertEquals(
-			$resultado, $dollar->multiplicarPor($multiplicador)->quantidade
-		);
+		$dollar 			= new Dollar($quantidade);
+
+		$dollarMultiplicado = $dollar->multiplicarPor($multiplicador);
+		self::assertEquals($resultado, $dollarMultiplicado->quantidade);
+
+		$dollarMultiplicado = $dollar->multiplicarPor($multiplicador);
+		self::assertEquals($resultado, $dollarMultiplicado->quantidade);
 	}
 }

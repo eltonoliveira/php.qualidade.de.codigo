@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metrics generated="2013-05-02T00:29:41" pdepend="1.1.0" ahh="0" andc="0" calls="0" ccn="2" ccn2="2" cloc="39" clsa="0" clsc="1" eloc="14" fanout="0" leafs="1" lloc="6" loc="56" maxDIT="0" ncloc="17" noc="1" nof="0" noi="0" nom="2" nop="1" roots="0">
+<metrics generated="2013-05-02T01:51:58" pdepend="1.1.0" ahh="0" andc="0" calls="0" ccn="2" ccn2="2" cloc="39" clsa="0" clsc="1" eloc="14" fanout="0" leafs="1" lloc="6" loc="56" maxDIT="0" ncloc="17" noc="1" nof="0" noi="0" nom="2" nop="1" roots="0">
   <files>
     <file name="C:\xampp\htdocs\php.qualidade.de.codigo\dinheiro.multi.moeda\moedas\Dollar.php" cloc="39" eloc="14" lloc="6" loc="56" ncloc="17"/>
   </files>
