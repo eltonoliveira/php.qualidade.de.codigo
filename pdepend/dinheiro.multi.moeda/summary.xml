@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metrics generated="2013-05-02T01:51:58" pdepend="1.1.0" ahh="0" andc="0" calls="0" ccn="2" ccn2="2" cloc="39" clsa="0" clsc="1" eloc="14" fanout="0" leafs="1" lloc="6" loc="56" maxDIT="0" ncloc="17" noc="1" nof="0" noi="0" nom="2" nop="1" roots="0">
+<metrics generated="2013-05-02T02:44:24" pdepend="1.1.0" ahh="0" andc="0" calls="0" ccn="3" ccn2="3" cloc="39" clsa="0" clsc="1" eloc="14" fanout="1" leafs="1" lloc="6" loc="56" maxDIT="0" ncloc="17" noc="1" nof="0" noi="0" nom="3" nop="1" roots="0">
   <files>
     <file name="C:\xampp\htdocs\php.qualidade.de.codigo\dinheiro.multi.moeda\moedas\Dollar.php" cloc="39" eloc="14" lloc="6" loc="56" ncloc="17"/>
   </files>
-  <package name="Moedas\Dollar" cr="0.15" noc="1" nof="0" noi="0" nom="2" rcr="0.15">
-    <class name="Dollar" ca="0" cbo="0" ce="0" cis="3" cloc="24" cr="0.15" csz="3" dit="0" eloc="7" impl="0" lloc="3" loc="39" ncloc="15" noam="0" nocc="0" nom="2" noom="0" npm="2" rcr="0.15" vars="1" varsi="1" varsnp="1" wmc="2" wmci="2" wmcnp="2">
+  <package name="Moedas\Dollar" cr="0.15" noc="1" nof="0" noi="0" nom="3" rcr="0.15">
+    <class name="Dollar" ca="0" cbo="1" ce="1" cis="4" cloc="24" cr="0.15" csz="4" dit="0" eloc="7" impl="0" lloc="3" loc="39" ncloc="15" noam="0" nocc="0" nom="3" noom="0" npm="3" rcr="0.15" vars="1" varsi="1" varsnp="1" wmc="3" wmci="3" wmcnp="3">
       <file name="C:\xampp\htdocs\php.qualidade.de.codigo\dinheiro.multi.moeda\moedas\Dollar.php"/>
       <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
       <method name="multiplicarPor" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="5" ncloc="5" npath="1"/>
+      <method name="equals" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
     </class>
   </package>
 </metrics>

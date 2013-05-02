@@ -39,17 +39,34 @@ class Dollar
 	}	
 
 	/**
-	* Multiplica o a quantidade do objeto Dollar por um multiplicador.
+	* Multiplica o a quantidade do objeto Dollar por um multiplicador e retorna
+	* um nova instância de Dollar.
 	*
 	* @param int $multiplicador Valor pelo qual a quantidade de dollar será 
 	* multiplicada.
 	*
 	* @name   multiplicarPor
 	* @access public
-	* @return void
+	* @return new Dollar
 	*/
 	public function multiplicarPor($multiplicador)
 	{
 		return new Dollar($this->quantidade * $multiplicador);
+	}
+
+	/**
+	* Multiplica o a quantidade do objeto Dollar por um multiplicador e retorna
+	* um nova instância de Dollar.
+	*
+	* @param Dollar $dollar Outra instância de Dollar cujo valor da quantidade
+	* será comparado com o valor da quantidade do Dollar atual.
+	*
+	* @name   equals
+	* @access public
+	* @return bollean
+	*/
+	public function equals(Dollar $dollar)
+	{
+		return $this->quantidade == $dollar->quantidade;
 	}
 }

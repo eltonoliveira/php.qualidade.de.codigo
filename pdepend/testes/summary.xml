@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metrics generated="2013-05-02T01:52:27" pdepend="1.1.0" ahh="2" andc="0" calls="2" ccn="2" ccn2="2" cloc="31" clsa="0" clsc="1" eloc="23" fanout="1" leafs="0" lloc="6" loc="49" maxDIT="2" ncloc="18" noc="1" nof="0" noi="0" nom="2" nop="1" roots="1">
+<metrics generated="2013-05-02T02:44:35" pdepend="1.1.0" ahh="2" andc="0" calls="5" ccn="3" ccn2="3" cloc="31" clsa="0" clsc="1" eloc="23" fanout="1" leafs="0" lloc="6" loc="49" maxDIT="2" ncloc="18" noc="1" nof="0" noi="0" nom="3" nop="1" roots="1">
   <files>
     <file name="C:\xampp\htdocs\php.qualidade.de.codigo\testes\DollarTest.php" cloc="31" eloc="23" lloc="6" loc="49" ncloc="18"/>
   </files>
-  <package name="Moedas\Dollar" cr="0.15" noc="1" nof="0" noi="0" nom="2" rcr="0.2775">
-    <class name="DollarTest" ca="0" cbo="1" ce="1" cis="2" cloc="20" cr="0.15" csz="2" dit="2" eloc="16" impl="0" lloc="3" loc="42" ncloc="22" noam="2" nocc="0" nom="2" noom="0" npm="2" rcr="0.2775" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+  <package name="Moedas\Dollar" cr="0.15" noc="1" nof="0" noi="0" nom="3" rcr="0.2775">
+    <class name="DollarTest" ca="0" cbo="1" ce="1" cis="3" cloc="20" cr="0.15" csz="3" dit="2" eloc="16" impl="0" lloc="3" loc="42" ncloc="22" noam="3" nocc="0" nom="3" noom="0" npm="3" rcr="0.2775" vars="0" varsi="0" varsnp="0" wmc="3" wmci="3" wmcnp="3">
       <file name="C:\xampp\htdocs\php.qualidade.de.codigo\testes\DollarTest.php"/>
       <method name="provedorDoTesteMultiplicarDollarPorUmEscalar" ccn="1" ccn2="1" cloc="0" eloc="10" lloc="1" loc="11" ncloc="11" npath="1"/>
       <method name="testMultiplicarDollarPorUmEscalar" ccn="1" ccn2="1" cloc="0" eloc="6" lloc="2" loc="7" ncloc="7" npath="1"/>
+      <method name="testVerificarAIgualdadeEntreDoisObjetosDollar" ccn="1" ccn2="1" cloc="0" eloc="5" lloc="3" loc="6" ncloc="6" npath="1"/>
     </class>
   </package>
 </metrics>

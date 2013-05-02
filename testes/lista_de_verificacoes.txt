@@ -5,5 +5,7 @@ Tarefas:
 3) Tornar 'quantidade' privada
 4) Efeitos colaterais em Dollar? -> OK
 5) Arredondamento de dinheiro?
-6) Criacao de um método equals()
+6) Criacao de um método equals() -> OK
 7) hashCode()
+8) Igualdade de NULL
+9) Igualdade de objeto

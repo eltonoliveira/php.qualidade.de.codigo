@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project version="2.0.0a12" title="">
-  <file path="Dollar.php" hash="1a48a0811d869a768dab924e0f282fb9" package="Default">
+  <file path="Dollar.php" hash="863e3dad361e6d705c5aa7f28f8e4aa7" package="Default">
     <class final="false" abstract="false" namespace="global" line="18" package="Moedas\Dollar">
       <extends/>
       <name>Dollar</name>
@@ -49,25 +49,48 @@
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="51" package="Moedas\Dollar">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="52" package="Moedas\Dollar">
         <name>multiplicarPor</name>
         <full_name>multiplicarPor</full_name>
         <docblock line="41">
-          <description>Multiplica o a quantidade do objeto Dollar por um multiplicador.</description>
+          <description>Multiplica o a quantidade do objeto Dollar por um multiplicador e retorna
+um nova instância de Dollar.</description>
           <long-description></long-description>
           <tag line="41" name="param" description="Valor pelo qual a quantidade de dollar será&#13;&#10;multiplicada." type="int" variable="$multiplicador">
             <type by_reference="false">int</type>
           </tag>
           <tag line="41" name="name" description="multiplicarPor"/>
           <tag line="41" name="access" description="public"/>
-          <tag line="41" name="return" description="" type="void">
-            <type by_reference="false">void</type>
+          <tag line="41" name="return" description="Dollar" type="\new">
+            <type by_reference="false">\new</type>
           </tag>
         </docblock>
-        <argument line="51">
+        <argument line="52">
           <name>$multiplicador</name>
           <default></default>
           <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="68" package="Moedas\Dollar">
+        <name>equals</name>
+        <full_name>equals</full_name>
+        <docblock line="57">
+          <description>Multiplica o a quantidade do objeto Dollar por um multiplicador e retorna
+um nova instância de Dollar.</description>
+          <long-description></long-description>
+          <tag line="57" name="param" description="Outra instância de Dollar cujo valor da quantidade&#13;&#10;será comparado com o valor da quantidade do Dollar atual." type="\Dollar" variable="$dollar">
+            <type by_reference="false">\Dollar</type>
+          </tag>
+          <tag line="57" name="name" description="equals"/>
+          <tag line="57" name="access" description="public"/>
+          <tag line="57" name="return" description="" type="\bollean">
+            <type by_reference="false">\bollean</type>
+          </tag>
+        </docblock>
+        <argument line="68">
+          <name>$dollar</name>
+          <default></default>
+          <type>\Dollar</type>
         </argument>
       </method>
     </class>
