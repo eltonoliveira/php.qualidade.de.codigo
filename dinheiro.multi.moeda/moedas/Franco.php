@@ -1,4 +1,5 @@
 <?php
+
 /**
 * Classe para representar a moeda franco.
 * 
@@ -14,13 +15,8 @@
 * @license    GPL http://www.gnu.org/licenses/gpl.html
 * @link       Ver documentação
 */
-class Franco
+class Franco extends Dinheiro
 {
-	/**
-	* @var int Valor que irá representar a quantidade de francos do objeto. 
-	*/
-	private $_quantidade;
-
 	/**
 	* Construtor
 	*
@@ -53,19 +49,4 @@ class Franco
 		return new Franco($this->_quantidade * $multiplicador);
 	}
 
-	/**
-	* Verifica a igual entre duas instancias de Franco que tenham sido criadas
-	* com a mesma quantidade.
-	*
-	* @param Franco $franco Outra instância de Franco cujo valor da quantidade
-	* será comparado com o valor da quantidade do Dollar atual.
-	*
-	* @name   equals
-	* @access public
-	* @return bollean
-	*/
-	public function equals(Franco $franco)
-	{
-		return $this->_quantidade == $franco->_quantidade;
-	}
 }

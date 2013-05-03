@@ -15,13 +15,8 @@
 * @license    GPL http://www.gnu.org/licenses/gpl.html
 * @link       Ver documentação
 */
-class Dollar
+class Dollar extends Dinheiro
 {
-	/**
-	* @var int Valor que irá representar a quantidade de dollares do objeto. 
-	*/
-	private $_quantidade;
-
 	/**
 	* Construtor
 	*
@@ -54,19 +49,5 @@ class Dollar
 		return new Dollar($this->_quantidade * $multiplicador);
 	}
 
-	/**
-	* Verifica a igual entre duas instancias de Dollar que tenham sido criadas
-	* com a mesma quantidade.
-	*
-	* @param Dollar $dollar Outra instância de Dollar cujo valor da quantidade
-	* será comparado com o valor da quantidade do Dollar atual.
-	*
-	* @name   equals
-	* @access public
-	* @return bollean
-	*/
-	public function equals(Dollar $dollar)
-	{
-		return $this->_quantidade == $dollar->_quantidade;
-	}
+
 }
