@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metrics generated="2013-05-02T02:44:35" pdepend="1.1.0" ahh="2" andc="0" calls="5" ccn="3" ccn2="3" cloc="31" clsa="0" clsc="1" eloc="23" fanout="1" leafs="0" lloc="6" loc="49" maxDIT="2" ncloc="18" noc="1" nof="0" noi="0" nom="3" nop="1" roots="1">
+<metrics generated="2013-05-03T03:20:33" pdepend="1.1.0" ahh="2" andc="0" calls="5" ccn="3" ccn2="3" cloc="31" clsa="0" clsc="1" eloc="23" fanout="1" leafs="0" lloc="6" loc="49" maxDIT="2" ncloc="18" noc="1" nof="0" noi="0" nom="3" nop="1" roots="1">
   <files>
     <file name="C:\xampp\htdocs\php.qualidade.de.codigo\testes\DollarTest.php" cloc="31" eloc="23" lloc="6" loc="49" ncloc="18"/>
   </files>

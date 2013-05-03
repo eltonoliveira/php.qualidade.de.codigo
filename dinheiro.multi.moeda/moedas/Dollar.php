@@ -20,7 +20,7 @@ class Dollar
 	/**
 	* @var int Valor que irá representar a quantidade de dollares do objeto. 
 	*/
-	public $quantidade;
+	private $quantidade;
 
 	/**
 	* Construtor
@@ -55,8 +55,8 @@ class Dollar
 	}
 
 	/**
-	* Multiplica o a quantidade do objeto Dollar por um multiplicador e retorna
-	* um nova instância de Dollar.
+	* Verifica a igual entre duas instancias de Dollar que tenham sido criadas
+	* com a mesma quantidade.
 	*
 	* @param Dollar $dollar Outra instância de Dollar cujo valor da quantidade
 	* será comparado com o valor da quantidade do Dollar atual.

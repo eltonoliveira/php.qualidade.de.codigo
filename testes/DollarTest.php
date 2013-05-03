@@ -50,13 +50,8 @@ class DollarTest extends PHPUnit_FrameWork_TestCase
 	*/
 	public function testMultiplicarDollarPorUmEscalar($quantidade, $multiplicador, $resultado) 
 	{
-		$dollar 			= new Dollar($quantidade);
-
-		$dollarMultiplicado = $dollar->multiplicarPor($multiplicador);
-		self::assertEquals($resultado, $dollarMultiplicado->quantidade);
-
-		$dollarMultiplicado = $dollar->multiplicarPor($multiplicador);
-		self::assertEquals($resultado, $dollarMultiplicado->quantidade);
+		$dollar = new Dollar($quantidade);
+		self::assertEquals(new Dollar($resultado), $dollar->multiplicarPor($multiplicador));
 	}
 
 	/**

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project version="2.0.0a12" title="">
-  <file path="DollarTest.php" hash="eb6cd6aad9c868f4809ae601d6fcfe80" package="Default">
+  <file path="DollarTest.php" hash="11eac3ba5b205a056bf5bc1abbf523d2" package="Default">
     <include line="2" type="Require Once" package="Default">
       <name>./config/autoload.php</name>
     </include>
@@ -71,16 +71,16 @@ escalar qualquer.</description>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="70" package="Moedas\Dollar">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="65" package="Moedas\Dollar">
         <name>testVerificarAIgualdadeEntreDoisObjetosDollar</name>
         <full_name>testVerificarAIgualdadeEntreDoisObjetosDollar</full_name>
-        <docblock line="62">
+        <docblock line="57">
           <description>O objetivo do teste é verificar se quando criamos dois objetos
 iguais suas quantidades também são iguais.</description>
           <long-description></long-description>
-          <tag line="62" name="name" description="testVerificarAIgualdadeEntreDoisObjetosDollar"/>
-          <tag line="62" name="access" description="public"/>
-          <tag line="62" name="return" description="" type="void">
+          <tag line="57" name="name" description="testVerificarAIgualdadeEntreDoisObjetosDollar"/>
+          <tag line="57" name="access" description="public"/>
+          <tag line="57" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>

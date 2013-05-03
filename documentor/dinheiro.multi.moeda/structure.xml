@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project version="2.0.0a12" title="">
-  <file path="Dollar.php" hash="863e3dad361e6d705c5aa7f28f8e4aa7" package="Default">
+  <file path="Dollar.php" hash="cf59da24b963ee95843461f5be8de80c" package="Default">
     <class final="false" abstract="false" namespace="global" line="18" package="Moedas\Dollar">
       <extends/>
       <name>Dollar</name>
@@ -17,7 +17,7 @@
         <tag line="3" name="license" description="GPL http://www.gnu.org/licenses/gpl.html"/>
         <tag line="3" name="link" description="documentação" link="Ver"/>
       </docblock>
-      <property final="false" static="false" visibility="public" line="23" namespace="global" package="Default">
+      <property final="false" static="false" visibility="private" line="23" namespace="global" package="Default">
         <name>$quantidade</name>
         <default></default>
         <docblock line="20">
@@ -75,8 +75,8 @@ um nova instância de Dollar.</description>
         <name>equals</name>
         <full_name>equals</full_name>
         <docblock line="57">
-          <description>Multiplica o a quantidade do objeto Dollar por um multiplicador e retorna
-um nova instância de Dollar.</description>
+          <description>Verifica a igual entre duas instancias de Dollar que tenham sido criadas
+com a mesma quantidade.</description>
           <long-description></long-description>
           <tag line="57" name="param" description="Outra instância de Dollar cujo valor da quantidade&#13;&#10;será comparado com o valor da quantidade do Dollar atual." type="\Dollar" variable="$dollar">
             <type by_reference="false">\Dollar</type>

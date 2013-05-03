@@ -10,7 +10,15 @@ phpunit --testdox testes/
 
 --- PHP Mess Detector --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-phpmd ./ html --reportfile phpmd/relatorio.html unusedcode, controversial, design, naming, codesize
+phpmd ./ html --reportfile phpmd/relatorio_unusedcode.html unusedcode
+
+phpmd ./ html --reportfile phpmd/relatorio_controversial.html controversial
+
+phpmd ./ html --reportfile phpmd/relatorio_design.html design
+
+phpmd ./ html --reportfile phpmd/relatorio_naming.html naming
+
+phpmd ./ html --reportfile phpmd/relatorio_codesize.html codesize
 
 
 
