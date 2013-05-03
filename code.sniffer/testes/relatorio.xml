@@ -8,4 +8,12 @@
   <warning line="51" column="95" source="Generic.Files.LineLength.TooLong" severity="5">Line exceeds 85 characters; contains 95 characters</warning>
   <warning line="54" column="93" source="Generic.Files.LineLength.TooLong" severity="5">Line exceeds 85 characters; contains 92 characters</warning>
  </file>
+ <file name="C:\xampp\htdocs\php.qualidade.de.codigo\testes\FrancoTest.php" errors="2" warnings="4">
+  <error line="1" column="1" source="Generic.Files.LineEndings.InvalidEOLChar" severity="5">End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;</error>
+  <error line="2" column="1" source="PEAR.Commenting.FileComment.Missing" severity="5">Missing file doc comment</error>
+  <warning line="31" column="90" source="Generic.Files.LineLength.TooLong" severity="5">Line exceeds 85 characters; contains 90 characters</warning>
+  <warning line="33" column="94" source="Generic.Files.LineLength.TooLong" severity="5">Line exceeds 85 characters; contains 94 characters</warning>
+  <warning line="51" column="95" source="Generic.Files.LineLength.TooLong" severity="5">Line exceeds 85 characters; contains 94 characters</warning>
+  <warning line="54" column="93" source="Generic.Files.LineLength.TooLong" severity="5">Line exceeds 85 characters; contains 92 characters</warning>
+ </file>
 </phpcs>

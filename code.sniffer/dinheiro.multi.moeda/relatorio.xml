@@ -5,4 +5,9 @@
   <error line="2" column="1" source="PEAR.Commenting.FileComment.Missing" severity="5">Missing file doc comment</error>
   <error line="23" column="13" source="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore" severity="5">Private member variable &quot;quantidade&quot; must be prefixed with an underscore</error>
  </file>
+ <file name="C:\xampp\htdocs\php.qualidade.de.codigo\dinheiro.multi.moeda\moedas\Franco.php" errors="3" warnings="0">
+  <error line="1" column="1" source="Generic.Files.LineEndings.InvalidEOLChar" severity="5">End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;</error>
+  <error line="2" column="1" source="PEAR.Commenting.FileComment.Missing" severity="5">Missing file doc comment</error>
+  <error line="22" column="13" source="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore" severity="5">Private member variable &quot;quantidade&quot; must be prefixed with an underscore</error>
+ </file>
 </phpcs>

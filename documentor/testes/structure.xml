@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project version="2.0.0a12" title="">
-  <file path="DollarTest.php" hash="11eac3ba5b205a056bf5bc1abbf523d2" package="Default">
+  <file path="DollarTest.php" hash="3133d70d558d16df6fb7f6c3370f0e2a" package="Default">
     <include line="2" type="Require Once" package="Default">
       <name>./config/autoload.php</name>
     </include>
@@ -9,7 +9,7 @@
       <name>DollarTest</name>
       <full_name>\DollarTest</full_name>
       <docblock line="4">
-        <description>Classe de teste da moeda Dollar</description>
+        <description>Classe de teste da moeda dollar.</description>
         <long-description></long-description>
         <tag line="4" name="name" description="DollarTest"/>
         <tag line="4" name="category" description="Testes"/>
@@ -90,9 +90,100 @@ iguais suas quantidades também são iguais.</description>
       <error line="0" code="50007">No page-level DocBlock was found in file DollarTest.php</error>
     </parse_markers>
   </file>
+  <file path="FrancoTest.php" hash="d92df24885351b760c8735e008fcbd14" package="Default">
+    <include line="2" type="Require Once" package="Default">
+      <name>./config/autoload.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="global" line="15" package="Moedas\Franco">
+      <extends>\PHPUnit_FrameWork_TestCase</extends>
+      <name>FrancoTest</name>
+      <full_name>\FrancoTest</full_name>
+      <docblock line="4">
+        <description>Classe de teste da moeda franco suiço</description>
+        <long-description></long-description>
+        <tag line="4" name="name" description="FrancoTest"/>
+        <tag line="4" name="category" description="Testes"/>
+        <tag line="4" name="package" description="Moedas"/>
+        <tag line="4" name="subpackage" description="Franco"/>
+        <tag line="4" name="author" description="Elton D. de Oliveira &lt;elton.douglas.oliv@gmail.com&gt;"/>
+        <tag line="4" name="license" description="GPL http://www.gnu.org/licenses/gpl.html"/>
+        <tag line="4" name="link" description="documentação" link="Ver"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Moedas\Franco">
+        <name>provedorDoTesteMultiplicarFrancoPorUmEscalar</name>
+        <full_name>provedorDoTesteMultiplicarFrancoPorUmEscalar</full_name>
+        <docblock line="17">
+          <description>Provedor dos dados do teste testMultiplicarFrancoPorUmEscalar.</description>
+          <long-description></long-description>
+          <tag line="17" name="name" description="provedorDoTesteMultiplicarFrancoPorUmEscalar"/>
+          <tag line="17" name="access" description="public"/>
+          <tag line="17" name="return" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="51" package="Moedas\Franco">
+        <name>testMultiplicarFrancoPorUmEscalar</name>
+        <full_name>testMultiplicarFrancoPorUmEscalar</full_name>
+        <docblock line="38">
+          <description>O objetivo do teste é validar se é possível multiplicar um franco por um
+escalar qualquer.</description>
+          <long-description></long-description>
+          <tag line="38" name="param" description="Quantidade com a qual o franco será criado." type="int" variable="$quantidade">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="38" name="param" description="Valor pelo qual o franco criado será multiplicado" type="int" variable="$multiplicador">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="38" name="param" description="Resultado da multiplicação" type="int" variable="$resultado">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="38" name="dataProvider" description="provedorDoTesteMultiplicarFrancoPorUmEscalar"/>
+          <tag line="38" name="name" description="testMultiplicarFrancoPorUmEscalar"/>
+          <tag line="38" name="access" description="public"/>
+          <tag line="38" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="51">
+          <name>$quantidade</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="51">
+          <name>$multiplicador</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="51">
+          <name>$resultado</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="65" package="Moedas\Franco">
+        <name>testVerificarAIgualdadeEntreDoisObjetosFranco</name>
+        <full_name>testVerificarAIgualdadeEntreDoisObjetosFranco</full_name>
+        <docblock line="57">
+          <description>O objetivo do teste é verificar se quando criamos dois objetos
+iguais suas quantidades também são iguais.</description>
+          <long-description></long-description>
+          <tag line="57" name="name" description="testVerificarAIgualdadeEntreDoisObjetosFranco"/>
+          <tag line="57" name="access" description="public"/>
+          <tag line="57" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file FrancoTest.php</error>
+    </parse_markers>
+  </file>
   <package name="Default" full_name="Default"/>
   <package name="Moedas" full_name="Moedas">
     <package name="Dollar" full_name="Moedas\Dollar"/>
+    <package name="Franco" full_name="Moedas\Franco"/>
   </package>
   <namespace name="global" full_name="global"/>
   <marker count="0">todo</marker>

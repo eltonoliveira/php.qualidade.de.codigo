@@ -1,9 +1,9 @@
 <?php
 
 /**
-* Classe para representar o objeto dollar.
+* Classe para representar a moeda dollar.
 * 
-* @abstract   A classe Dollar é uma classe criada para representar o objeto
+* @abstract   A classe Dollar é uma classe criada para representar a moeda
 * dollar. Ela será criada de acordo com as especificações do livro TDD: 
 * Desenvolvimento Guiado por testes, do Kent Beck.
 *

@@ -2,7 +2,7 @@
 require_once './config/autoload.php';
 
 /**
-* Classe de teste da moeda Dollar
+* Classe de teste da moeda dollar.
 *
 * @name       DollarTest
 * @category   Testes

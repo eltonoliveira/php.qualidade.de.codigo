@@ -9,4 +9,7 @@ Tarefas:
 7)  hashCode()
 8)  Igualdade de NULL
 9)  Igualdade de objeto
-10) 5 CHF * 2 = 10 CHF 
+10) 5 CHF * 2 = 10 CHF -> OK
+11) Remover a duplicação de Dollar/Franco
+12) Criar 'equals' comum
+13) Criar 'multiplicarPor' comum
