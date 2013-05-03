@@ -10,7 +10,7 @@
       <full_name>\DollarTest</full_name>
       <docblock line="4">
         <description>Classe de teste da moeda dollar.</description>
-        <long-description></long-description>
+        <long-description/>
         <tag line="4" name="name" description="DollarTest"/>
         <tag line="4" name="category" description="Testes"/>
         <tag line="4" name="package" description="Moedas"/>
@@ -24,7 +24,7 @@
         <full_name>provedorDoTesteMultiplicarDollarPorUmEscalar</full_name>
         <docblock line="17">
           <description>Provedor dos dados do teste testMultiplicarDollarPorUmEscalar.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="17" name="name" description="provedorDoTesteMultiplicarDollarPorUmEscalar"/>
           <tag line="17" name="access" description="public"/>
           <tag line="17" name="return" description="" type="array">
@@ -38,7 +38,7 @@
         <docblock line="38">
           <description>O objetivo do teste é validar se é possível multiplicar um Dollar por um
 escalar qualquer.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="38" name="param" description="Quantidade com a qual o Dollar será criado." type="int" variable="$quantidade">
             <type by_reference="false">int</type>
           </tag>
@@ -57,17 +57,17 @@ escalar qualquer.</description>
         </docblock>
         <argument line="51">
           <name>$quantidade</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="51">
           <name>$multiplicador</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="51">
           <name>$resultado</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -77,7 +77,7 @@ escalar qualquer.</description>
         <docblock line="57">
           <description>O objetivo do teste é verificar se quando criamos dois objetos
 iguais suas quantidades também são iguais.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="57" name="name" description="testVerificarAIgualdadeEntreDoisObjetosDollar"/>
           <tag line="57" name="access" description="public"/>
           <tag line="57" name="return" description="" type="void">
@@ -100,7 +100,7 @@ iguais suas quantidades também são iguais.</description>
       <full_name>\FrancoTest</full_name>
       <docblock line="4">
         <description>Classe de teste da moeda franco suiço</description>
-        <long-description></long-description>
+        <long-description/>
         <tag line="4" name="name" description="FrancoTest"/>
         <tag line="4" name="category" description="Testes"/>
         <tag line="4" name="package" description="Moedas"/>
@@ -114,7 +114,7 @@ iguais suas quantidades também são iguais.</description>
         <full_name>provedorDoTesteMultiplicarFrancoPorUmEscalar</full_name>
         <docblock line="17">
           <description>Provedor dos dados do teste testMultiplicarFrancoPorUmEscalar.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="17" name="name" description="provedorDoTesteMultiplicarFrancoPorUmEscalar"/>
           <tag line="17" name="access" description="public"/>
           <tag line="17" name="return" description="" type="array">
@@ -128,7 +128,7 @@ iguais suas quantidades também são iguais.</description>
         <docblock line="38">
           <description>O objetivo do teste é validar se é possível multiplicar um franco por um
 escalar qualquer.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="38" name="param" description="Quantidade com a qual o franco será criado." type="int" variable="$quantidade">
             <type by_reference="false">int</type>
           </tag>
@@ -147,17 +147,17 @@ escalar qualquer.</description>
         </docblock>
         <argument line="51">
           <name>$quantidade</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="51">
           <name>$multiplicador</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="51">
           <name>$resultado</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -167,7 +167,7 @@ escalar qualquer.</description>
         <docblock line="57">
           <description>O objetivo do teste é verificar se quando criamos dois objetos
 iguais suas quantidades também são iguais.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="57" name="name" description="testVerificarAIgualdadeEntreDoisObjetosFranco"/>
           <tag line="57" name="access" description="public"/>
           <tag line="57" name="return" description="" type="void">

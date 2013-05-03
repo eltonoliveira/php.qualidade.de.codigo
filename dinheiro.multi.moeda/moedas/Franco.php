@@ -19,7 +19,7 @@ class Franco
 	/**
 	* @var int Valor que irá representar a quantidade de francos do objeto. 
 	*/
-	private $quantidade;
+	private $_quantidade;
 
 	/**
 	* Construtor
@@ -34,7 +34,7 @@ class Franco
 	*/
 	public function __construct($quantidade = 1)
 	{
-		$this->quantidade = $quantidade;
+		$this->_quantidade = $quantidade;
 	}	
 
 	/**
@@ -50,7 +50,7 @@ class Franco
 	*/
 	public function multiplicarPor($multiplicador)
 	{
-		return new Franco($this->quantidade * $multiplicador);
+		return new Franco($this->_quantidade * $multiplicador);
 	}
 
 	/**
@@ -66,6 +66,6 @@ class Franco
 	*/
 	public function equals(Franco $franco)
 	{
-		return $this->quantidade == $franco->quantidade;
+		return $this->_quantidade == $franco->_quantidade;
 	}
 }

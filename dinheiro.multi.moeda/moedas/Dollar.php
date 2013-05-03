@@ -20,7 +20,7 @@ class Dollar
 	/**
 	* @var int Valor que irá representar a quantidade de dollares do objeto. 
 	*/
-	private $quantidade;
+	private $_quantidade;
 
 	/**
 	* Construtor
@@ -35,7 +35,7 @@ class Dollar
 	*/
 	public function __construct($quantidade = 1)
 	{
-		$this->quantidade = $quantidade;
+		$this->_quantidade = $quantidade;
 	}	
 
 	/**
@@ -51,7 +51,7 @@ class Dollar
 	*/
 	public function multiplicarPor($multiplicador)
 	{
-		return new Dollar($this->quantidade * $multiplicador);
+		return new Dollar($this->_quantidade * $multiplicador);
 	}
 
 	/**
@@ -67,6 +67,6 @@ class Dollar
 	*/
 	public function equals(Dollar $dollar)
 	{
-		return $this->quantidade == $dollar->quantidade;
+		return $this->_quantidade == $dollar->_quantidade;
 	}
 }
