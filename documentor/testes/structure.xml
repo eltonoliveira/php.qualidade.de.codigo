@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project version="2.0.0a12" title="">
-  <file path="DollarTest.php" hash="3133d70d558d16df6fb7f6c3370f0e2a" package="Default">
+  <file path="DollarTest.php" hash="d7b9afed5fba2743cc728269a6f2ab7a" package="Default">
     <include line="2" type="Require Once" package="Default">
       <name>./config/autoload.php</name>
     </include>
@@ -71,16 +71,30 @@ escalar qualquer.</description>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="65" package="Moedas\Dollar">
-        <name>testVerificarAIgualdadeEntreDoisObjetosDollar</name>
-        <full_name>testVerificarAIgualdadeEntreDoisObjetosDollar</full_name>
-        <docblock line="57">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="66" package="Moedas\Dollar">
+        <name>testVerificarSeDoisObjetosDollarSaoIguais</name>
+        <full_name>testVerificarSeDoisObjetosDollarSaoIguais</full_name>
+        <docblock line="58">
           <description>O objetivo do teste é verificar se quando criamos dois objetos
 iguais suas quantidades também são iguais.</description>
           <long-description/>
-          <tag line="57" name="name" description="testVerificarAIgualdadeEntreDoisObjetosDollar"/>
-          <tag line="57" name="access" description="public"/>
-          <tag line="57" name="return" description="" type="void">
+          <tag line="58" name="name" description="testVerificarSeDoisObjetosDollarSaoIguais"/>
+          <tag line="58" name="access" description="public"/>
+          <tag line="58" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="80" package="Moedas\Dollar">
+        <name>testVerificarSeUmObjetoDollarEDiferenteDeUmObjetoFranco</name>
+        <full_name>testVerificarSeUmObjetoDollarEDiferenteDeUmObjetoFranco</full_name>
+        <docblock line="72">
+          <description>O objetivo do teste é verificar se um objeto Dollar é diferente
+de um objeto Franco.</description>
+          <long-description/>
+          <tag line="72" name="name" description="testVerificarSeUmObjetoDollarEDiferenteDeUmObjetoFranco"/>
+          <tag line="72" name="access" description="public"/>
+          <tag line="72" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>
@@ -90,7 +104,7 @@ iguais suas quantidades também são iguais.</description>
       <error line="0" code="50007">No page-level DocBlock was found in file DollarTest.php</error>
     </parse_markers>
   </file>
-  <file path="FrancoTest.php" hash="d92df24885351b760c8735e008fcbd14" package="Default">
+  <file path="FrancoTest.php" hash="a05b682133fdc9dd0d60d5cfccf09ab9" package="Default">
     <include line="2" type="Require Once" package="Default">
       <name>./config/autoload.php</name>
     </include>
@@ -161,16 +175,30 @@ escalar qualquer.</description>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="65" package="Moedas\Franco">
-        <name>testVerificarAIgualdadeEntreDoisObjetosFranco</name>
-        <full_name>testVerificarAIgualdadeEntreDoisObjetosFranco</full_name>
-        <docblock line="57">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="66" package="Moedas\Franco">
+        <name>testVerificarSeDoisObjetosFrancoSaoIguais</name>
+        <full_name>testVerificarSeDoisObjetosFrancoSaoIguais</full_name>
+        <docblock line="58">
           <description>O objetivo do teste é verificar se quando criamos dois objetos
 iguais suas quantidades também são iguais.</description>
           <long-description/>
-          <tag line="57" name="name" description="testVerificarAIgualdadeEntreDoisObjetosFranco"/>
-          <tag line="57" name="access" description="public"/>
-          <tag line="57" name="return" description="" type="void">
+          <tag line="58" name="name" description="testVerificarSeDoisObjetosFrancoSaoIguais"/>
+          <tag line="58" name="access" description="public"/>
+          <tag line="58" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="80" package="Moedas\Franco">
+        <name>testVerificarSeUmObjetoFrancoEDiferenteDeUmObjetoDollar</name>
+        <full_name>testVerificarSeUmObjetoFrancoEDiferenteDeUmObjetoDollar</full_name>
+        <docblock line="72">
+          <description>O objetivo do teste é verificar se um objeto Franco é diferente
+de um objeto Dollar.</description>
+          <long-description/>
+          <tag line="72" name="name" description="testVerificarSeUmObjetoFrancoEDiferenteDeUmObjetoDollar"/>
+          <tag line="72" name="access" description="public"/>
+          <tag line="72" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>

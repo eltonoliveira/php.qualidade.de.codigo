@@ -50,22 +50,35 @@ class DollarTest extends PHPUnit_FrameWork_TestCase
 	*/
 	public function testMultiplicarDollarPorUmEscalar($quantidade, $multiplicador, $resultado) 
 	{
-		$dollar = new Dollar($quantidade);
-		self::assertEquals(new Dollar($resultado), $dollar->multiplicarPor($multiplicador));
+		self::assertEquals(
+			Dinheiro::dollar($resultado), Dinheiro::dollar($quantidade)->multiplicarPor($multiplicador)
+		);
 	}
 
 	/**
 	* O objetivo do teste é verificar se quando criamos dois objetos
 	* iguais suas quantidades também são iguais.
 	*
-	* @name   testVerificarAIgualdadeEntreDoisObjetosDollar
+	* @name   testVerificarSeDoisObjetosDollarSaoIguais
     * @access public
 	* @return void
 	*/
-	public function testVerificarAIgualdadeEntreDoisObjetosDollar()
+	public function testVerificarSeDoisObjetosDollarSaoIguais()
 	{	
-		$dollar = new Dollar(5);
-		self::assertTrue($dollar->equals(new Dollar(5)));
-		self::assertFalse($dollar->equals(new Dollar(6)));
+		self::assertTrue(Dinheiro::dollar(5)->equals(Dinheiro::dollar(5)));
+		self::assertFalse(Dinheiro::dollar(5)->equals(Dinheiro::dollar(6)));
+	}
+
+	/**
+	* O objetivo do teste é verificar se um objeto Dollar é diferente
+	* de um objeto Franco.
+	*
+	* @name   testVerificarSeUmObjetoDollarEDiferenteDeUmObjetoFranco
+    * @access public
+	* @return void
+	*/
+	public function testVerificarSeUmObjetoDollarEDiferenteDeUmObjetoFranco()
+	{
+		self::assertFalse(Dinheiro::dollar(5)->equals(Dinheiro::franco(5)));
 	}
 }

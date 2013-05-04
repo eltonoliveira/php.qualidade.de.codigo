@@ -50,22 +50,35 @@ class FrancoTest extends PHPUnit_FrameWork_TestCase
 	*/
 	public function testMultiplicarFrancoPorUmEscalar($quantidade, $multiplicador, $resultado)
 	{
-		$franco = new Franco($quantidade);
-		self::assertEquals(new Franco($resultado), $franco->multiplicarPor($multiplicador));
+		self::assertEquals(
+			Dinheiro::franco($resultado), Dinheiro::franco($quantidade)->multiplicarPor($multiplicador)
+		);
 	}
 
 	/**
 	* O objetivo do teste é verificar se quando criamos dois objetos
 	* iguais suas quantidades também são iguais.
 	*
-	* @name   testVerificarAIgualdadeEntreDoisObjetosFranco
+	* @name   testVerificarSeDoisObjetosFrancoSaoIguais
     * @access public
 	* @return void
 	*/
-	public function testVerificarAIgualdadeEntreDoisObjetosFranco()
+	public function testVerificarSeDoisObjetosFrancoSaoIguais()
 	{	
-		$franco = new Franco(5);
-		self::assertTrue($franco->equals(new Franco(5)));
-		self::assertFalse($franco->equals(new Franco(6)));
+		self::assertTrue(Dinheiro::franco(5)->equals(Dinheiro::franco(5)));
+		self::assertFalse(Dinheiro::franco(5)->equals(Dinheiro::franco(6)));
+	}
+
+	/**
+	* O objetivo do teste é verificar se um objeto Franco é diferente
+	* de um objeto Dollar.
+	*
+	* @name   testVerificarSeUmObjetoFrancoEDiferenteDeUmObjetoDollar
+    * @access public
+	* @return void
+	*/
+	public function testVerificarSeUmObjetoFrancoEDiferenteDeUmObjetoDollar()
+	{
+		self::assertFalse(Dinheiro::franco(5)->equals(Dinheiro::dollar(5)));
 	}
 }

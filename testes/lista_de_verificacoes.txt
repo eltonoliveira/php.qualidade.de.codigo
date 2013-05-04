@@ -13,3 +13,6 @@ Tarefas:
 11) Remover a duplicação de Dollar/Franco
 12) Criar 'equals' comum -> OK
 13) Criar 'multiplicarPor' comum
+14) Comparar Franco com Dollar -> OK
+15) É necessário uma classe moeda?
+16) É necessário excluir o teste 'testMultiplicarFrancoPorUmEscalar'?
