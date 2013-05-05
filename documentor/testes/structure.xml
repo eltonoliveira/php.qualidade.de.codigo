@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project version="2.0.0a12" title="">
-  <file path="DollarTest.php" hash="d7b9afed5fba2743cc728269a6f2ab7a" package="Default">
+  <file path="DollarTest.php" hash="66ba6ecc50619575655d79f87cbc45db" package="Default">
     <include line="2" type="Require Once" package="Default">
       <name>./config/autoload.php</name>
     </include>
@@ -99,12 +99,26 @@ de um objeto Franco.</description>
           </tag>
         </docblock>
       </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="93" package="Moedas\Dollar">
+        <name>testVerificarSeAMoedaEIgualAUsd</name>
+        <full_name>testVerificarSeAMoedaEIgualAUsd</full_name>
+        <docblock line="85">
+          <description>O objetivo do teste é verificar se o tipo da moeda do
+objeto Dollar é igual a USD.</description>
+          <long-description/>
+          <tag line="85" name="name" description="testVerificarSeAMoedaEIgualAUsd"/>
+          <tag line="85" name="access" description="public"/>
+          <tag line="85" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
     </class>
     <parse_markers>
       <error line="0" code="50007">No page-level DocBlock was found in file DollarTest.php</error>
     </parse_markers>
   </file>
-  <file path="FrancoTest.php" hash="a05b682133fdc9dd0d60d5cfccf09ab9" package="Default">
+  <file path="FrancoTest.php" hash="cf9fa7ac138da5a0ba7b5ce52468bdbb" package="Default">
     <include line="2" type="Require Once" package="Default">
       <name>./config/autoload.php</name>
     </include>
@@ -199,6 +213,20 @@ de um objeto Dollar.</description>
           <tag line="72" name="name" description="testVerificarSeUmObjetoFrancoEDiferenteDeUmObjetoDollar"/>
           <tag line="72" name="access" description="public"/>
           <tag line="72" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="93" package="Moedas\Franco">
+        <name>testVerificarSeAMoedaEIgualAChf</name>
+        <full_name>testVerificarSeAMoedaEIgualAChf</full_name>
+        <docblock line="85">
+          <description>O objetivo do teste é verificar se o tipo da moeda do
+objeto Franco é igual a CHF.</description>
+          <long-description/>
+          <tag line="85" name="name" description="testVerificarSeAMoedaEIgualAChf"/>
+          <tag line="85" name="access" description="public"/>
+          <tag line="85" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>

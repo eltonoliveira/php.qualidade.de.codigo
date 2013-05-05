@@ -20,17 +20,18 @@ class Dollar extends Dinheiro
 	/**
 	* Construtor
 	*
-	* @param int $quantidade Valor com que irá definir quantos dollares o o 
+	* @param string $moeda String que representa o tipo de moeda.
+	* @param int    $quantidade Valor com que irá definir quantos dollares o 
 	* objeto criado irá conter.
-    *
+	*
 	* @name   __construct
 	* @access public
 	* @return void
 	*
 	*/
-	public function __construct($quantidade = 1)
+	public function __construct($moeda, $quantidade = 1)
 	{
-		$this->_quantidade = $quantidade;
+		parent::__construct($moeda, $quantidade);
 	}	
 
 	/**
@@ -46,8 +47,7 @@ class Dollar extends Dinheiro
 	*/
 	public function multiplicarPor($multiplicador)
 	{
-		return new Dollar($this->_quantidade * $multiplicador);
+		return Dinheiro::dollar($this->_quantidade * $multiplicador);
 	}
-
 
 }

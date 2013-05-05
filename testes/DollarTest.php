@@ -81,4 +81,17 @@ class DollarTest extends PHPUnit_FrameWork_TestCase
 	{
 		self::assertFalse(Dinheiro::dollar(5)->equals(Dinheiro::franco(5)));
 	}
+
+	/**
+	* O objetivo do teste é verificar se o tipo da moeda do
+	* objeto Dollar é igual a USD.  
+	*
+	* @name   testVerificarSeAMoedaEIgualAUsd
+    * @access public
+	* @return void
+	*/
+	public function testVerificarSeAMoedaEIgualAUsd()
+	{
+		self::assertEquals('USD', Dinheiro::dollar(5)->moeda());
+	}	
 }

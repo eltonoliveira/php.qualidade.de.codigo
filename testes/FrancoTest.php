@@ -81,4 +81,19 @@ class FrancoTest extends PHPUnit_FrameWork_TestCase
 	{
 		self::assertFalse(Dinheiro::franco(5)->equals(Dinheiro::dollar(5)));
 	}
+
+	/**
+	* O objetivo do teste é verificar se o tipo da moeda do
+	* objeto Franco é igual a CHF.  
+	*
+	* @name   testVerificarSeAMoedaEIgualAChf
+    * @access public
+	* @return void
+	*/
+	public function testVerificarSeAMoedaEIgualAChf()
+	{
+		self::assertEquals('CHF', Dinheiro::franco(5)->moeda());
+	}	
+
+
 }

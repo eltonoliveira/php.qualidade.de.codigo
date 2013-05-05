@@ -21,6 +21,28 @@ class Dinheiro
 	* @var int Valor que irá representar a quantidade do objeto. 
 	*/
 	protected $_quantidade;	
+	/**
+	* @var string String que representa o tipo de moeda. 
+	*/
+	protected $_moeda;
+
+	/**
+	* Construtor
+	*
+	* @param string $moeda String que representa o tipo de moeda. 
+	* @param int    $quantidade Valor com que irá definir quantos dollares o 
+	* objeto criado irá conter.
+	*
+	* @name   __construct
+	* @access public
+	* @return void
+	*
+	*/
+	public function __construct($moeda, $quantidade = 1)
+	{
+		$this->_quantidade = $quantidade;
+		$this->_moeda 	   = $moeda;
+	}	
 
 	/**
 	* Método estático para criar uma instância da classe Dollar.
@@ -28,12 +50,12 @@ class Dinheiro
 	* @param int $quantidade Valor que irá representar a quantidade do objeto.
 	*
 	* @name   dollar
-	* @access static
+	* @access public
 	* @return new Dollar
 	*/
 	public static function dollar($quantidade = 1)
 	{
-		return new Dollar($quantidade);
+		return new Dollar('USD', $quantidade);
 	}
 
 	/**
@@ -42,12 +64,12 @@ class Dinheiro
 	* @param int $quantidade Valor que irá representar a quantidade do objeto.
 	*
 	* @name   franco
-	* @access static
+	* @access public
 	* @return new Franco
 	*/
-	public static function franco($quantidade)
+	public static function franco($quantidade = 1)
 	{
-		return new Franco($quantidade);
+		return new Franco('CHF', $quantidade);
 	}
 
 	/**
@@ -66,4 +88,16 @@ class Dinheiro
 		return $this->_quantidade == $dinheiro->_quantidade &&
 		get_class($this) === get_class($dinheiro);
 	}
+
+	/**
+	* Retorna uma string com o tipo de moeda do objeto. 
+	*
+	* @name   moeda
+	* @access public
+	* @return string
+	*/
+	public function moeda()
+	{
+		return $this->_moeda;
+	}	
 }
