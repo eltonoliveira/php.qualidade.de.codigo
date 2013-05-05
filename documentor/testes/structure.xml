@@ -1,245 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project version="2.0.0a12" title="">
-  <file path="DollarTest.php" hash="66ba6ecc50619575655d79f87cbc45db" package="Default">
+  <file path="DinheiroTest.php" hash="3867bf674af04c97601e414b6210fefc" package="Default">
     <include line="2" type="Require Once" package="Default">
       <name>./config/autoload.php</name>
     </include>
-    <class final="false" abstract="false" namespace="global" line="15" package="Moedas\Dollar">
+    <class final="false" abstract="false" namespace="global" line="15" package="Moedas\Dinheiro">
       <extends>\PHPUnit_FrameWork_TestCase</extends>
-      <name>DollarTest</name>
-      <full_name>\DollarTest</full_name>
+      <name>DinheiroTest</name>
+      <full_name>\DinheiroTest</full_name>
       <docblock line="4">
-        <description>Classe de teste da moeda dollar.</description>
-        <long-description/>
-        <tag line="4" name="name" description="DollarTest"/>
+        <description>Classe de testes da classe Dinheiro</description>
+        <long-description></long-description>
+        <tag line="4" name="name" description="DinheiroTest"/>
         <tag line="4" name="category" description="Testes"/>
         <tag line="4" name="package" description="Moedas"/>
-        <tag line="4" name="subpackage" description="Dollar"/>
+        <tag line="4" name="subpackage" description="Dinheiro"/>
         <tag line="4" name="author" description="Elton D. de Oliveira &lt;elton.douglas.oliv@gmail.com&gt;"/>
         <tag line="4" name="license" description="GPL http://www.gnu.org/licenses/gpl.html"/>
         <tag line="4" name="link" description="documentação" link="Ver"/>
       </docblock>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Moedas\Dollar">
-        <name>provedorDoTesteMultiplicarDollarPorUmEscalar</name>
-        <full_name>provedorDoTesteMultiplicarDollarPorUmEscalar</full_name>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Moedas\Dinheiro">
+        <name>testVerificarSeOsObjetosFrancoEDollarSaoDiferentes</name>
+        <full_name>testVerificarSeOsObjetosFrancoEDollarSaoDiferentes</full_name>
         <docblock line="17">
-          <description>Provedor dos dados do teste testMultiplicarDollarPorUmEscalar.</description>
-          <long-description/>
-          <tag line="17" name="name" description="provedorDoTesteMultiplicarDollarPorUmEscalar"/>
+          <description>O objetivo do teste é verificar se objetos Franco e Dollar são diferentes.</description>
+          <long-description></long-description>
+          <tag line="17" name="name" description="testVerificarSeOsObjetosFrancoEDollarSaoDiferentes"/>
           <tag line="17" name="access" description="public"/>
-          <tag line="17" name="return" description="" type="array">
-            <type by_reference="false">array</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="51" package="Moedas\Dollar">
-        <name>testMultiplicarDollarPorUmEscalar</name>
-        <full_name>testMultiplicarDollarPorUmEscalar</full_name>
-        <docblock line="38">
-          <description>O objetivo do teste é validar se é possível multiplicar um Dollar por um
-escalar qualquer.</description>
-          <long-description/>
-          <tag line="38" name="param" description="Quantidade com a qual o Dollar será criado." type="int" variable="$quantidade">
-            <type by_reference="false">int</type>
-          </tag>
-          <tag line="38" name="param" description="Valor pelo qual o Dollar criado será multiplicado" type="int" variable="$multiplicador">
-            <type by_reference="false">int</type>
-          </tag>
-          <tag line="38" name="param" description="Resultado da multiplicação" type="int" variable="$resultado">
-            <type by_reference="false">int</type>
-          </tag>
-          <tag line="38" name="dataProvider" description="provedorDoTesteMultiplicarDollarPorUmEscalar"/>
-          <tag line="38" name="name" description="testMultiplicarDollarPorUmEscalar"/>
-          <tag line="38" name="access" description="public"/>
-          <tag line="38" name="return" description="" type="void">
-            <type by_reference="false">void</type>
-          </tag>
-        </docblock>
-        <argument line="51">
-          <name>$quantidade</name>
-          <default/>
-          <type/>
-        </argument>
-        <argument line="51">
-          <name>$multiplicador</name>
-          <default/>
-          <type/>
-        </argument>
-        <argument line="51">
-          <name>$resultado</name>
-          <default/>
-          <type/>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="66" package="Moedas\Dollar">
-        <name>testVerificarSeDoisObjetosDollarSaoIguais</name>
-        <full_name>testVerificarSeDoisObjetosDollarSaoIguais</full_name>
-        <docblock line="58">
-          <description>O objetivo do teste é verificar se quando criamos dois objetos
-iguais suas quantidades também são iguais.</description>
-          <long-description/>
-          <tag line="58" name="name" description="testVerificarSeDoisObjetosDollarSaoIguais"/>
-          <tag line="58" name="access" description="public"/>
-          <tag line="58" name="return" description="" type="void">
+          <tag line="17" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="80" package="Moedas\Dollar">
-        <name>testVerificarSeUmObjetoDollarEDiferenteDeUmObjetoFranco</name>
-        <full_name>testVerificarSeUmObjetoDollarEDiferenteDeUmObjetoFranco</full_name>
-        <docblock line="72">
-          <description>O objetivo do teste é verificar se um objeto Dollar é diferente
-de um objeto Franco.</description>
-          <long-description/>
-          <tag line="72" name="name" description="testVerificarSeUmObjetoDollarEDiferenteDeUmObjetoFranco"/>
-          <tag line="72" name="access" description="public"/>
-          <tag line="72" name="return" description="" type="void">
-            <type by_reference="false">void</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="93" package="Moedas\Dollar">
-        <name>testVerificarSeAMoedaEIgualAUsd</name>
-        <full_name>testVerificarSeAMoedaEIgualAUsd</full_name>
-        <docblock line="85">
-          <description>O objetivo do teste é verificar se o tipo da moeda do
-objeto Dollar é igual a USD.</description>
-          <long-description/>
-          <tag line="85" name="name" description="testVerificarSeAMoedaEIgualAUsd"/>
-          <tag line="85" name="access" description="public"/>
-          <tag line="85" name="return" description="" type="void">
-            <type by_reference="false">void</type>
-          </tag>
-        </docblock>
-      </method>
-    </class>
-    <parse_markers>
-      <error line="0" code="50007">No page-level DocBlock was found in file DollarTest.php</error>
-    </parse_markers>
-  </file>
-  <file path="FrancoTest.php" hash="cf9fa7ac138da5a0ba7b5ce52468bdbb" package="Default">
-    <include line="2" type="Require Once" package="Default">
-      <name>./config/autoload.php</name>
-    </include>
-    <class final="false" abstract="false" namespace="global" line="15" package="Moedas\Franco">
-      <extends>\PHPUnit_FrameWork_TestCase</extends>
-      <name>FrancoTest</name>
-      <full_name>\FrancoTest</full_name>
-      <docblock line="4">
-        <description>Classe de teste da moeda franco suiço</description>
-        <long-description/>
-        <tag line="4" name="name" description="FrancoTest"/>
-        <tag line="4" name="category" description="Testes"/>
-        <tag line="4" name="package" description="Moedas"/>
-        <tag line="4" name="subpackage" description="Franco"/>
-        <tag line="4" name="author" description="Elton D. de Oliveira &lt;elton.douglas.oliv@gmail.com&gt;"/>
-        <tag line="4" name="license" description="GPL http://www.gnu.org/licenses/gpl.html"/>
-        <tag line="4" name="link" description="documentação" link="Ver"/>
-      </docblock>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Moedas\Franco">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="36" package="Moedas\Dinheiro">
         <name>provedorDoTesteMultiplicarFrancoPorUmEscalar</name>
         <full_name>provedorDoTesteMultiplicarFrancoPorUmEscalar</full_name>
-        <docblock line="17">
+        <docblock line="29">
           <description>Provedor dos dados do teste testMultiplicarFrancoPorUmEscalar.</description>
-          <long-description/>
-          <tag line="17" name="name" description="provedorDoTesteMultiplicarFrancoPorUmEscalar"/>
-          <tag line="17" name="access" description="public"/>
-          <tag line="17" name="return" description="" type="array">
+          <long-description></long-description>
+          <tag line="29" name="name" description="provedorDoTesteMultiplicarFrancoPorUmEscalar"/>
+          <tag line="29" name="access" description="public"/>
+          <tag line="29" name="return" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="51" package="Moedas\Franco">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="63" package="Moedas\Dinheiro">
         <name>testMultiplicarFrancoPorUmEscalar</name>
         <full_name>testMultiplicarFrancoPorUmEscalar</full_name>
-        <docblock line="38">
+        <docblock line="50">
           <description>O objetivo do teste é validar se é possível multiplicar um franco por um
 escalar qualquer.</description>
-          <long-description/>
-          <tag line="38" name="param" description="Quantidade com a qual o franco será criado." type="int" variable="$quantidade">
+          <long-description></long-description>
+          <tag line="50" name="param" description="Quantidade com a qual o franco será criado." type="int" variable="$quantidade">
             <type by_reference="false">int</type>
           </tag>
-          <tag line="38" name="param" description="Valor pelo qual o franco criado será multiplicado" type="int" variable="$multiplicador">
+          <tag line="50" name="param" description="Valor pelo qual o franco criado será multiplicado" type="int" variable="$multiplicador">
             <type by_reference="false">int</type>
           </tag>
-          <tag line="38" name="param" description="Resultado da multiplicação" type="int" variable="$resultado">
+          <tag line="50" name="param" description="Resultado da multiplicação" type="int" variable="$resultado">
             <type by_reference="false">int</type>
           </tag>
-          <tag line="38" name="dataProvider" description="provedorDoTesteMultiplicarFrancoPorUmEscalar"/>
-          <tag line="38" name="name" description="testMultiplicarFrancoPorUmEscalar"/>
-          <tag line="38" name="access" description="public"/>
-          <tag line="38" name="return" description="" type="void">
+          <tag line="50" name="dataProvider" description="provedorDoTesteMultiplicarFrancoPorUmEscalar"/>
+          <tag line="50" name="name" description="testMultiplicarFrancoPorUmEscalar"/>
+          <tag line="50" name="access" description="public"/>
+          <tag line="50" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>
-        <argument line="51">
+        <argument line="63">
           <name>$quantidade</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="51">
+        <argument line="63">
           <name>$multiplicador</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="51">
+        <argument line="63">
           <name>$resultado</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="66" package="Moedas\Franco">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="78" package="Moedas\Dinheiro">
         <name>testVerificarSeDoisObjetosFrancoSaoIguais</name>
         <full_name>testVerificarSeDoisObjetosFrancoSaoIguais</full_name>
-        <docblock line="58">
+        <docblock line="70">
           <description>O objetivo do teste é verificar se quando criamos dois objetos
 iguais suas quantidades também são iguais.</description>
-          <long-description/>
-          <tag line="58" name="name" description="testVerificarSeDoisObjetosFrancoSaoIguais"/>
-          <tag line="58" name="access" description="public"/>
-          <tag line="58" name="return" description="" type="void">
+          <long-description></long-description>
+          <tag line="70" name="name" description="testVerificarSeDoisObjetosFrancoSaoIguais"/>
+          <tag line="70" name="access" description="public"/>
+          <tag line="70" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="80" package="Moedas\Franco">
-        <name>testVerificarSeUmObjetoFrancoEDiferenteDeUmObjetoDollar</name>
-        <full_name>testVerificarSeUmObjetoFrancoEDiferenteDeUmObjetoDollar</full_name>
-        <docblock line="72">
-          <description>O objetivo do teste é verificar se um objeto Franco é diferente
-de um objeto Dollar.</description>
-          <long-description/>
-          <tag line="72" name="name" description="testVerificarSeUmObjetoFrancoEDiferenteDeUmObjetoDollar"/>
-          <tag line="72" name="access" description="public"/>
-          <tag line="72" name="return" description="" type="void">
-            <type by_reference="false">void</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="93" package="Moedas\Franco">
-        <name>testVerificarSeAMoedaEIgualAChf</name>
-        <full_name>testVerificarSeAMoedaEIgualAChf</full_name>
-        <docblock line="85">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="92" package="Moedas\Dinheiro">
+        <name>testVerificarSeAMoedaDeFrancoEIgualAChf</name>
+        <full_name>testVerificarSeAMoedaDeFrancoEIgualAChf</full_name>
+        <docblock line="84">
           <description>O objetivo do teste é verificar se o tipo da moeda do
 objeto Franco é igual a CHF.</description>
-          <long-description/>
-          <tag line="85" name="name" description="testVerificarSeAMoedaEIgualAChf"/>
-          <tag line="85" name="access" description="public"/>
-          <tag line="85" name="return" description="" type="void">
+          <long-description></long-description>
+          <tag line="84" name="name" description="testVerificarSeAMoedaDeFrancoEIgualAChf"/>
+          <tag line="84" name="access" description="public"/>
+          <tag line="84" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="104" package="Moedas\Dinheiro">
+        <name>provedorDoTesteMultiplicarDollarPorUmEscalar</name>
+        <full_name>provedorDoTesteMultiplicarDollarPorUmEscalar</full_name>
+        <docblock line="97">
+          <description>Provedor dos dados do teste testMultiplicarDollarPorUmEscalar.</description>
+          <long-description></long-description>
+          <tag line="97" name="name" description="provedorDoTesteMultiplicarDollarPorUmEscalar"/>
+          <tag line="97" name="access" description="public"/>
+          <tag line="97" name="return" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="131" package="Moedas\Dinheiro">
+        <name>testMultiplicarDollarPorUmEscalar</name>
+        <full_name>testMultiplicarDollarPorUmEscalar</full_name>
+        <docblock line="118">
+          <description>O objetivo do teste é validar se é possível multiplicar um Dollar por um
+escalar qualquer.</description>
+          <long-description></long-description>
+          <tag line="118" name="param" description="Quantidade com a qual o Dollar será criado." type="int" variable="$quantidade">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="118" name="param" description="Valor pelo qual o Dollar criado será multiplicado" type="int" variable="$multiplicador">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="118" name="param" description="Resultado da multiplicação" type="int" variable="$resultado">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="118" name="dataProvider" description="provedorDoTesteMultiplicarDollarPorUmEscalar"/>
+          <tag line="118" name="name" description="testMultiplicarDollarPorUmEscalar"/>
+          <tag line="118" name="access" description="public"/>
+          <tag line="118" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="131">
+          <name>$quantidade</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="131">
+          <name>$multiplicador</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="131">
+          <name>$resultado</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="146" package="Moedas\Dinheiro">
+        <name>testVerificarSeDoisObjetosDollarSaoIguais</name>
+        <full_name>testVerificarSeDoisObjetosDollarSaoIguais</full_name>
+        <docblock line="138">
+          <description>O objetivo do teste é verificar se quando criamos dois objetos
+iguais suas quantidades também são iguais.</description>
+          <long-description></long-description>
+          <tag line="138" name="name" description="testVerificarSeDoisObjetosDollarSaoIguais"/>
+          <tag line="138" name="access" description="public"/>
+          <tag line="138" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="158" package="Moedas\Dinheiro">
+        <name>testVerificarSeAMoedaDeDollarEIgualAUsd</name>
+        <full_name>testVerificarSeAMoedaDeDollarEIgualAUsd</full_name>
+        <docblock line="150">
+          <description>O objetivo do teste é verificar se o tipo da moeda do
+objeto Dollar é igual a USD.</description>
+          <long-description></long-description>
+          <tag line="150" name="name" description="testVerificarSeAMoedaDeDollarEIgualAUsd"/>
+          <tag line="150" name="access" description="public"/>
+          <tag line="150" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>
       </method>
     </class>
     <parse_markers>
-      <error line="0" code="50007">No page-level DocBlock was found in file FrancoTest.php</error>
+      <error line="0" code="50007">No page-level DocBlock was found in file DinheiroTest.php</error>
     </parse_markers>
   </file>
   <package name="Default" full_name="Default"/>
   <package name="Moedas" full_name="Moedas">
-    <package name="Dollar" full_name="Moedas\Dollar"/>
-    <package name="Franco" full_name="Moedas\Franco"/>
+    <package name="Dinheiro" full_name="Moedas\Dinheiro"/>
   </package>
   <namespace name="global" full_name="global"/>
   <marker count="0">todo</marker>

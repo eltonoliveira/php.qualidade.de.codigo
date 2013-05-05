@@ -55,21 +55,7 @@ class Dinheiro
 	*/
 	public static function dollar($quantidade = 1)
 	{
-		return new Dollar('USD', $quantidade);
-	}
-
-	/**
-	* Método estático para criar uma instância da classe Franco.
-	*
-	* @param int $quantidade Valor que irá representar a quantidade do objeto.
-	*
-	* @name   franco
-	* @access public
-	* @return new Franco
-	*/
-	public static function franco($quantidade = 1)
-	{
-		return new Franco('CHF', $quantidade);
+		return new Dinheiro('USD', $quantidade);
 	}
 
 	/**
@@ -86,7 +72,21 @@ class Dinheiro
 	public function equals(Dinheiro $dinheiro)
 	{
 		return $this->_quantidade == $dinheiro->_quantidade &&
-		get_class($this) === get_class($dinheiro);
+		self::moeda() == $dinheiro->moeda();
+	}
+
+	/**
+	* Método estático para criar uma instância da classe Franco.
+	*
+	* @param int $quantidade Valor que irá representar a quantidade do objeto.
+	*
+	* @name   franco
+	* @access public
+	* @return new Franco
+	*/
+	public static function franco($quantidade = 1)
+	{
+		return new Dinheiro('CHF', $quantidade);
 	}
 
 	/**
@@ -100,4 +100,20 @@ class Dinheiro
 	{
 		return $this->_moeda;
 	}	
+
+	/**
+	* Retorna um novo objeto Dinheiro cuja quantidade será a do objeto
+	* dinheiro existente multiplicada pelo multiplicador passado.
+	*
+	* @param int $multiplicador Valor pelo qual a quantidade do objeto criado será 
+	* multiplicada.
+	*
+	* @name   multiplicarPor
+	* @access public
+	* @return new Dinheiro
+	*/
+	public function multiplicarPor($multiplicador)
+	{
+		return new Dinheiro($this->_moeda, $this->_quantidade * $multiplicador);
+	}
 }

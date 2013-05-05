@@ -1,3 +1,13 @@
+
+--- PHP_CodeSniffer --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+phpcs -s --report=xml dinheiro.multi.moeda/  --report-file=code.sniffer/dinheiro.multi.moeda/relatorio.xml
+
+e
+
+phpcs -s --report=xml testes/  --report-file=code.sniffer/testes/relatorio.xml
+
+
 ----- PHP Unit --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 --- Para gerar a versão em um relatório HTML e também a cobertura de código em HTML. 
@@ -19,17 +29,6 @@ phpmd ./ html --reportfile phpmd/relatorio_design.html design
 phpmd ./ html --reportfile phpmd/relatorio_naming.html naming
 
 phpmd ./ html --reportfile phpmd/relatorio_codesize.html codesize
-
-
-
---- PHP_CodeSniffer --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-phpcs -s --report=xml dinheiro.multi.moeda/  --report-file=code.sniffer/dinheiro.multi.moeda/relatorio.xml
-
-e
-
-phpcs -s --report=xml testes/  --report-file=code.sniffer/testes/relatorio.xml
-
 
 
 --- PHP_Depend -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
