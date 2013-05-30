@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpcs version="1.4.5">
- <file name="C:\xampp\htdocs\php.qualidade.de.codigo\dinheiro.multi.moeda\moedas\Dinheiro.php" errors="1" warnings="2">
+ <file name="C:\xampp\htdocs\php.qualidade.de.codigo\dinheiro.multi.moeda\bancos\Banco.php" errors="1" warnings="0">
   <error line="1" column="1" source="Generic.Files.LineEndings.InvalidEOLChar" severity="5">End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;</error>
-  <warning line="65" column="1" source="Generic.Files.LineLength.TooLong" severity="5">Line exceeds 80 characters; contains 85 characters</warning>
-  <warning line="108" column="1" source="Generic.Files.LineLength.TooLong" severity="5">Line exceeds 80 characters; contains 84 characters</warning>
+ </file>
+ <file name="C:\xampp\htdocs\php.qualidade.de.codigo\dinheiro.multi.moeda\interfaces\Expressao.php" errors="1" warnings="0">
+  <error line="1" column="1" source="Generic.Files.LineEndings.InvalidEOLChar" severity="5">End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;</error>
+ </file>
+ <file name="C:\xampp\htdocs\php.qualidade.de.codigo\dinheiro.multi.moeda\interfaces\Soma.php" errors="1" warnings="2">
+  <error line="1" column="1" source="Generic.Files.LineEndings.InvalidEOLChar" severity="5">End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;</error>
+  <warning line="38" column="86" source="Generic.Files.LineLength.TooLong" severity="5">Line exceeds 80 characters; contains 85 characters</warning>
+  <warning line="55" column="99" source="Generic.Files.LineLength.TooLong" severity="5">Line exceeds 80 characters; contains 98 characters</warning>
+ </file>
+ <file name="C:\xampp\htdocs\php.qualidade.de.codigo\dinheiro.multi.moeda\moedas\Dinheiro.php" errors="1" warnings="5">
+  <error line="1" column="1" source="Generic.Files.LineEndings.InvalidEOLChar" severity="5">End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;</error>
+  <warning line="90" column="1" source="Generic.Files.LineLength.TooLong" severity="5">Line exceeds 80 characters; contains 85 characters</warning>
+  <warning line="121" column="1" source="Generic.Files.LineLength.TooLong" severity="5">Line exceeds 80 characters; contains 84 characters</warning>
+  <warning line="134" column="1" source="Generic.Files.LineLength.TooLong" severity="5">Line exceeds 80 characters; contains 86 characters</warning>
+  <warning line="145" column="99" source="Generic.Files.LineLength.TooLong" severity="5">Line exceeds 80 characters; contains 98 characters</warning>
+  <warning line="149" column="1" source="Generic.Files.LineLength.TooLong" severity="5">Line exceeds 80 characters; contains 82 characters</warning>
  </file>
 </phpcs>

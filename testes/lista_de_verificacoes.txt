@@ -1,18 +1,12 @@
 Tarefas:
 
 1)  $5 + 10 CHF (Franco Suíço) = $10 se a taxa é 2:1
-2)  5 * 2 = $10 -> OK
-3)  Tornar 'quantidade' privada -> OK
-4)  Efeitos colaterais em Dollar? -> OK
-5)  Arredondamento de dinheiro?
-6)  Criacao de um método equals() -> OK
-7)  hashCode()
-8)  Igualdade de NULL
-9)  Igualdade de objeto
-10) 5 CHF * 2 = 10 CHF -> OK
-11) Remover a duplicação de Dollar/Franco -> OK
-12) Criar 'equals' comum -> OK
-13) Criar 'multiplicarPor' comum -> OK
-14) Comparar Franco com Dollar -> OK
-15) É necessária uma string identificadora de moeda? -> OK
-16) É necessário excluir o teste 'testMultiplicarFrancoPorUmEscalar'? -> OK
+2)  $5 + $5 = $10
+3)  Arredondamento de dinheiro?
+4)  hashCode()
+5)  Igualdade de NULL
+6)  Igualdade de objeto
+7)  Retornar Dinheiro de $5 + $5
+8)  Banco->converter(Dinheiro)
+9)  Converter Dinheiro através de métodos de conversões
+10) Converter(Banco, String)

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metrics generated="2013-05-05T05:32:40" pdepend="1.1.0" ahh="2" andc="0" calls="24" ccn="9" ccn2="9" cloc="90" clsa="0" clsc="1" eloc="63" fanout="1" leafs="0" lloc="19" loc="163" maxDIT="2" ncloc="73" noc="1" nof="0" noi="0" nom="9" nop="1" roots="1">
+<metrics generated="2013-05-31T00:48:50" pdepend="1.1.0" ahh="2" andc="0" calls="45" ccn="14" ccn2="14" cloc="90" clsa="0" clsc="1" eloc="63" fanout="3" leafs="0" lloc="19" loc="163" maxDIT="2" ncloc="73" noc="1" nof="0" noi="0" nom="14" nop="1" roots="1">
   <files>
     <file name="C:\xampp\htdocs\php.qualidade.de.codigo\testes\DinheiroTest.php" cloc="90" eloc="63" lloc="19" loc="163" ncloc="73"/>
   </files>
-  <package name="Moedas\Dinheiro" cr="0.15" noc="1" nof="0" noi="0" nom="9" rcr="0.2775">
-    <class name="DinheiroTest" ca="0" cbo="1" ce="1" cis="9" cloc="79" cr="0.15" csz="9" dit="2" eloc="49" impl="0" lloc="9" loc="149" ncloc="70" noam="9" nocc="0" nom="9" noom="0" npm="9" rcr="0.2775" vars="0" varsi="0" varsnp="0" wmc="9" wmci="9" wmcnp="9">
+  <package name="Moedas\Dinheiro" cr="0.15" noc="1" nof="0" noi="0" nom="14" rcr="0.2775">
+    <class name="DinheiroTest" ca="0" cbo="3" ce="3" cis="14" cloc="79" cr="0.15" csz="14" dit="2" eloc="49" impl="0" lloc="9" loc="149" ncloc="70" noam="14" nocc="0" nom="14" noom="0" npm="14" rcr="0.2775" vars="0" varsi="0" varsnp="0" wmc="14" wmci="14" wmcnp="14">
       <file name="C:\xampp\htdocs\php.qualidade.de.codigo\testes\DinheiroTest.php"/>
+      <method name="testAdicaoSimples" ccn="1" ccn2="1" cloc="0" eloc="7" lloc="5" loc="8" ncloc="8" npath="1"/>
+      <method name="testVerificarAAdicaoEmObjetosDollar" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="5" ncloc="5" npath="1"/>
       <method name="testVerificarSeOsObjetosFrancoEDollarSaoDiferentes" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
       <method name="provedorDoTesteMultiplicarFrancoPorUmEscalar" ccn="1" ccn2="1" cloc="0" eloc="12" lloc="1" loc="13" ncloc="13" npath="1"/>
       <method name="testMultiplicarFrancoPorUmEscalar" ccn="1" ccn2="1" cloc="0" eloc="5" lloc="1" loc="6" ncloc="6" npath="1"/>
@@ -15,6 +17,9 @@
       <method name="testMultiplicarDollarPorUmEscalar" ccn="1" ccn2="1" cloc="0" eloc="5" lloc="1" loc="6" ncloc="6" npath="1"/>
       <method name="testVerificarSeDoisObjetosDollarSaoIguais" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
       <method name="testVerificarSeAMoedaDeDollarEIgualAUsd" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="testVerificarSeOMetodoMaisRetornaUmaSoma" ccn="1" ccn2="1" cloc="0" eloc="7" lloc="5" loc="8" ncloc="8" npath="1"/>
+      <method name="testVerificarAConversaoDaSoma" ccn="1" ccn2="1" cloc="0" eloc="6" lloc="4" loc="7" ncloc="7" npath="1"/>
+      <method name="testVerificarAConversaoDeDinheiro" ccn="1" ccn2="1" cloc="0" eloc="5" lloc="3" loc="6" ncloc="6" npath="1"/>
     </class>
   </package>
 </metrics>

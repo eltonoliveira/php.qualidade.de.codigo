@@ -14,6 +14,36 @@ require_once './config/autoload.php';
 */
 class DinheiroTest extends PHPUnit_FrameWork_TestCase
 {
+
+	/**
+	* Verifica uma soma simples.
+	*
+	* @name   testAdicaoSimples
+    * @access public
+	* @return void
+	*/
+	public function testAdicaoSimples()
+	{
+		$dollar 		= Dinheiro::dollar(5);
+		$expressaoSoma 	= $dollar->mais($dollar);
+		$banco 			= new Banco();
+		$convertido		= $banco->converter($expressaoSoma, 'USD');
+		self::assertEquals(Dinheiro::dollar(10), $convertido);
+	}
+
+	/**
+	* Verifica a soma de dois objetos Dollar 
+	*
+	* @name   testVerificarAAdicaoEmObjetosDollar
+    * @access public
+	* @return void
+	*/
+	public function testVerificarAAdicaoEmObjetosDollar()
+	{
+		$dollarSomado = Dinheiro::dollar(5)->adicionarMais(Dinheiro::dollar(5));
+		self::assertEquals(Dinheiro::dollar(10), $dollarSomado);
+	}
+
 	/**
 	* O objetivo do teste é verificar se objetos Franco e Dollar são diferentes.
 	*
@@ -80,7 +110,6 @@ class DinheiroTest extends PHPUnit_FrameWork_TestCase
 		self::assertTrue(Dinheiro::franco(5)->equals(Dinheiro::franco(5)));
 	}
 
-
 	/**
 	* O objetivo do teste é verificar se o tipo da moeda do
 	* objeto Franco é igual a CHF.  
@@ -91,7 +120,7 @@ class DinheiroTest extends PHPUnit_FrameWork_TestCase
 	*/
 	public function testVerificarSeAMoedaDeFrancoEIgualAChf()
 	{
-		self::assertEquals('CHF', Dinheiro::franco(5)->moeda());
+		self::assertEquals('CHF', Dinheiro::franco(5)->getMoeda());
 	}	
 
 	/**
@@ -147,6 +176,7 @@ class DinheiroTest extends PHPUnit_FrameWork_TestCase
 	{	
 		self::assertTrue(Dinheiro::dollar(5)->equals(Dinheiro::dollar(5)));
 	}
+
 	/**
 	* O objetivo do teste é verificar se o tipo da moeda do
 	* objeto Dollar é igual a USD.  
@@ -157,7 +187,51 @@ class DinheiroTest extends PHPUnit_FrameWork_TestCase
 	*/
 	public function testVerificarSeAMoedaDeDollarEIgualAUsd()
 	{
-		self::assertEquals('USD', Dinheiro::dollar(5)->moeda());
+		self::assertEquals('USD', Dinheiro::dollar(5)->getMoeda());
 	}
 
+	/**
+	* O teste verifica se o método Dinheiro::mais() retorna uma Expressao do tipo Soma.  
+	*
+	* @name   testVerificarSeOMetodoMaisRetornaUmaSoma
+    * @access public
+	* @return void
+	*/
+	public function testVerificarSeOMetodoMaisRetornaUmaSoma()
+	{
+		$dinheiro = Dinheiro::dollar(5);
+		$resultado = $dinheiro->mais($dinheiro);
+		$soma = $resultado;
+		self::assertEquals($dinheiro, $soma->primeiraParcela);
+		self::assertEquals($dinheiro, $soma->segundaParcela);
+	}
+
+	/**
+	* O teste verifica se a conversão na Expressao soma está correta.  
+	*
+	* @name   testVerificarAConversaoDaSoma
+    * @access public
+	* @return void
+	*/
+	public function testVerificarAConversaoDaSoma()
+	{
+		$soma  = new Soma(Dinheiro::dollar(3), Dinheiro::dollar(4));
+		$banco = new Banco();
+		$resultado = $banco->converter($soma, 'USD');
+		self::assertEquals(Dinheiro::dollar(7), $resultado);
+	}
+
+	/**
+	* O teste verifica se a conversão de Dinheiro está correta. 
+	*
+	* @name   testVerificarAConversaoDeDinheiro
+    * @access public
+	* @return void
+	*/
+	public function testVerificarAConversaoDeDinheiro()
+	{
+		$banco = new Banco();
+		$resultado = $banco->converter(Dinheiro::dollar(1), 'USD');
+		self::assertEquals(Dinheiro::dollar(1), $resultado);
+	}
 }

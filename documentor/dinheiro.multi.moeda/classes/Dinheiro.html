@@ -20,6 +20,8 @@
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a>Packages</a></li>
+<li><a href="../packages/Bancos.html"><i class="icon-folder-open"></i> Bancos</a></li>
+<li><a href="../packages/Interfaces.html"><i class="icon-folder-open"></i> Interfaces</a></li>
 <li><a href="../packages/Moedas.html"><i class="icon-folder-open"></i> Moedas</a></li>
 </ul>
 </li>
@@ -31,7 +33,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">1</span></a></li>
+                <span class="label label-info">4</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -57,12 +59,20 @@
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method___construct" title="__construct :: Construtor"><span class="description">Construtor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_adicionarMais" title="adicionarMais :: Adiciona uma quantidade X ao Dinheiro corrente e retorna um novo objeto Dinheiro
+criado com a soma dos valores."><span class="description">Adiciona uma quantidade X ao Dinheiro corrente e retorna um novo objeto Dinheiro
+criado com a soma dos valores.</span><pre>adicionarMais()</pre></a></li>
+<li class="method public "><a href="#method_converter" title="converter :: Método criado para garantir o contrato com a a interface Expressao."><span class="description">Método criado para garantir o contrato com a a interface Expressao.</span><pre>converter()</pre></a></li>
 <li class="method public "><a href="#method_dollar" title="dollar :: Método estático para criar uma instância da classe Dollar."><span class="description">Método estático para criar uma instância da classe Dollar.</span><pre>dollar()</pre></a></li>
 <li class="method public "><a href="#method_equals" title="equals :: Verifica a igual entre duas instancias de Dinheiro que tenham sido criadas
 com a mesma quantidade."><span class="description">Verifica a igual entre duas instancias de Dinheiro que tenham sido criadas
 com a mesma quantidade.</span><pre>equals()</pre></a></li>
 <li class="method public "><a href="#method_franco" title="franco :: Método estático para criar uma instância da classe Franco."><span class="description">Método estático para criar uma instância da classe Franco.</span><pre>franco()</pre></a></li>
-<li class="method public "><a href="#method_moeda" title="moeda :: Retorna uma string com o tipo de moeda do objeto."><span class="description">Retorna uma string com o tipo de moeda do objeto.</span><pre>moeda()</pre></a></li>
+<li class="method public "><a href="#method_getMoeda" title="getMoeda :: Retorna uma string com o tipo de moeda do objeto."><span class="description">Retorna uma string com o tipo de moeda do objeto.</span><pre>getMoeda()</pre></a></li>
+<li class="method public "><a href="#method_getQuantidade" title="getQuantidade :: Retornar a quantidade de Dinheiro"><span class="description">Retornar a quantidade de Dinheiro</span><pre>getQuantidade()</pre></a></li>
+<li class="method public "><a href="#method_mais" title="mais :: Adiciona uma quantidade X ao Dinheiro corrente e retorna um novo objeto Soma
+criado com a soma dos valores."><span class="description">Adiciona uma quantidade X ao Dinheiro corrente e retorna um novo objeto Soma
+criado com a soma dos valores.</span><pre>mais()</pre></a></li>
 <li class="method public "><a href="#method_multiplicarPor" title="multiplicarPor :: Retorna um novo objeto Dinheiro cuja quantidade será a do objeto
 dinheiro existente multiplicada pelo multiplicador passado."><span class="description">Retorna um novo objeto Dinheiro cuja quantidade será a do objeto
 dinheiro existente multiplicada pelo multiplicador passado.</span><pre>multiplicarPor()</pre></a></li>
@@ -159,6 +169,62 @@ objeto criado irá conter.</p>
 </div>
 </div></div>
 </div>
+<a id="method_adicionarMais"></a><div class="element clickable method public method_adicionarMais" data-toggle="collapse" data-target=".method_adicionarMais .collapse">
+<h2>Adiciona uma quantidade X ao Dinheiro corrente e retorna um novo objeto Dinheiro
+criado com a soma dos valores.</h2>
+<pre>adicionarMais(\Dinheiro $dinheiroAdicionado) : \new</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>name</th>
+<td>adicionarMais</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dinheiroAdicionado</h4>
+<code><a href="../classes/Dinheiro.html">\Dinheiro</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\new</code>Dinheiro</div>
+</div></div>
+</div>
+<a id="method_converter"></a><div class="element clickable method public method_converter" data-toggle="collapse" data-target=".method_converter .collapse">
+<h2>Método criado para garantir o contrato com a a interface Expressao.</h2>
+<pre>converter(string $converterPara) : <a href="../classes/Dinheiro.html">\Dinheiro</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>name</th>
+<td>converter</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$converterPara</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Dinheiro.html">\Dinheiro</a></code></div>
+</div></div>
+</div>
 <a id="method_dollar"></a><div class="element clickable method public method_dollar" data-toggle="collapse" data-target=".method_dollar .collapse">
 <h2>Método estático para criar uma instância da classe Dollar.</h2>
 <pre>dollar(int $quantidade) : \new</pre>
@@ -238,16 +304,16 @@ será comparado com o valor da quantidade do Dinheiro atual.</p>
 <code>\new</code>Franco</div>
 </div></div>
 </div>
-<a id="method_moeda"></a><div class="element clickable method public method_moeda" data-toggle="collapse" data-target=".method_moeda .collapse">
+<a id="method_getMoeda"></a><div class="element clickable method public method_getMoeda" data-toggle="collapse" data-target=".method_getMoeda .collapse">
 <h2>Retorna uma string com o tipo de moeda do objeto.</h2>
-<pre>moeda() : string</pre>
+<pre>getMoeda() : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <table class="table table-bordered">
 <tr>
 <th>name</th>
-<td>moeda</td>
+<td>getMoeda</td>
 </tr>
 <tr>
 <th>access</th>
@@ -256,6 +322,53 @@ será comparado com o valor da quantidade do Dinheiro atual.</p>
 </table>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getQuantidade"></a><div class="element clickable method public method_getQuantidade" data-toggle="collapse" data-target=".method_getQuantidade .collapse">
+<h2>Retornar a quantidade de Dinheiro</h2>
+<pre>getQuantidade() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>name</th>
+<td>getQuantidade</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a id="method_mais"></a><div class="element clickable method public method_mais" data-toggle="collapse" data-target=".method_mais .collapse">
+<h2>Adiciona uma quantidade X ao Dinheiro corrente e retorna um novo objeto Soma
+criado com a soma dos valores.</h2>
+<pre>mais(\Dinheiro $dinheiro) : \new</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>name</th>
+<td></td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dinheiro</h4>
+<code><a href="../classes/Dinheiro.html">\Dinheiro</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\new</code>Soma</div>
 </div></div>
 </div>
 <a id="method_multiplicarPor"></a><div class="element clickable method public method_multiplicarPor" data-toggle="collapse" data-target=".method_multiplicarPor .collapse">
@@ -307,7 +420,7 @@ multiplicada.</p>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-05-05T00:32:51-03:00.<br></footer></div>
+            generated on 2013-05-30T19:56:14-03:00.<br></footer></div>
 </div>
 </body>
 </html>

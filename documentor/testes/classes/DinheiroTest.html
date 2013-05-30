@@ -57,12 +57,16 @@
                     <ul>
 <li class="method public "><a href="#method_provedorDoTesteMultiplicarDollarPorUmEscalar" title="provedorDoTesteMultiplicarDollarPorUmEscalar :: Provedor dos dados do teste testMultiplicarDollarPorUmEscalar."><span class="description">Provedor dos dados do teste testMultiplicarDollarPorUmEscalar.</span><pre>provedorDoTesteMultiplicarDollarPorUmEscalar()</pre></a></li>
 <li class="method public "><a href="#method_provedorDoTesteMultiplicarFrancoPorUmEscalar" title="provedorDoTesteMultiplicarFrancoPorUmEscalar :: Provedor dos dados do teste testMultiplicarFrancoPorUmEscalar."><span class="description">Provedor dos dados do teste testMultiplicarFrancoPorUmEscalar.</span><pre>provedorDoTesteMultiplicarFrancoPorUmEscalar()</pre></a></li>
+<li class="method public "><a href="#method_testAdicaoSimples" title="testAdicaoSimples :: Verifica uma soma simples."><span class="description">Verifica uma soma simples.</span><pre>testAdicaoSimples()</pre></a></li>
 <li class="method public "><a href="#method_testMultiplicarDollarPorUmEscalar" title="testMultiplicarDollarPorUmEscalar :: O objetivo do teste é validar se é possível multiplicar um Dollar por um
 escalar qualquer."><span class="description">O objetivo do teste é validar se é possível multiplicar um Dollar por um
 escalar qualquer.</span><pre>testMultiplicarDollarPorUmEscalar()</pre></a></li>
 <li class="method public "><a href="#method_testMultiplicarFrancoPorUmEscalar" title="testMultiplicarFrancoPorUmEscalar :: O objetivo do teste é validar se é possível multiplicar um franco por um
 escalar qualquer."><span class="description">O objetivo do teste é validar se é possível multiplicar um franco por um
 escalar qualquer.</span><pre>testMultiplicarFrancoPorUmEscalar()</pre></a></li>
+<li class="method public "><a href="#method_testVerificarAAdicaoEmObjetosDollar" title="testVerificarAAdicaoEmObjetosDollar :: Verifica a soma de dois objetos Dollar"><span class="description">Verifica a soma de dois objetos Dollar</span><pre>testVerificarAAdicaoEmObjetosDollar()</pre></a></li>
+<li class="method public "><a href="#method_testVerificarAConversaoDaSoma" title="testVerificarAConversaoDaSoma :: O teste verifica se a conversão na Expressao soma está correta."><span class="description">O teste verifica se a conversão na Expressao soma está correta.</span><pre>testVerificarAConversaoDaSoma()</pre></a></li>
+<li class="method public "><a href="#method_testVerificarAConversaoDeDinheiro" title="testVerificarAConversaoDeDinheiro :: O teste verifica se a conversão de Dinheiro está correta."><span class="description">O teste verifica se a conversão de Dinheiro está correta.</span><pre>testVerificarAConversaoDeDinheiro()</pre></a></li>
 <li class="method public "><a href="#method_testVerificarSeAMoedaDeDollarEIgualAUsd" title="testVerificarSeAMoedaDeDollarEIgualAUsd :: O objetivo do teste é verificar se o tipo da moeda do
 objeto Dollar é igual a USD."><span class="description">O objetivo do teste é verificar se o tipo da moeda do
 objeto Dollar é igual a USD.</span><pre>testVerificarSeAMoedaDeDollarEIgualAUsd()</pre></a></li>
@@ -75,6 +79,7 @@ iguais suas quantidades também são iguais.</span><pre>testVerificarSeDoisObjet
 <li class="method public "><a href="#method_testVerificarSeDoisObjetosFrancoSaoIguais" title="testVerificarSeDoisObjetosFrancoSaoIguais :: O objetivo do teste é verificar se quando criamos dois objetos
 iguais suas quantidades também são iguais."><span class="description">O objetivo do teste é verificar se quando criamos dois objetos
 iguais suas quantidades também são iguais.</span><pre>testVerificarSeDoisObjetosFrancoSaoIguais()</pre></a></li>
+<li class="method public "><a href="#method_testVerificarSeOMetodoMaisRetornaUmaSoma" title="testVerificarSeOMetodoMaisRetornaUmaSoma :: O teste verifica se o método Dinheiro::mais() retorna uma Expressao do tipo Soma."><span class="description">O teste verifica se o método Dinheiro::mais() retorna uma Expressao do tipo Soma.</span><pre>testVerificarSeOMetodoMaisRetornaUmaSoma()</pre></a></li>
 <li class="method public "><a href="#method_testVerificarSeOsObjetosFrancoEDollarSaoDiferentes" title="testVerificarSeOsObjetosFrancoEDollarSaoDiferentes :: O objetivo do teste é verificar se objetos Franco e Dollar são diferentes."><span class="description">O objetivo do teste é verificar se objetos Franco e Dollar são diferentes.</span><pre>testVerificarSeOsObjetosFrancoEDollarSaoDiferentes()</pre></a></li>
 </ul>
 </li></ul>
@@ -165,6 +170,24 @@ iguais suas quantidades também são iguais.</span><pre>testVerificarSeDoisObjet
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
+<a id="method_testAdicaoSimples"></a><div class="element clickable method public method_testAdicaoSimples" data-toggle="collapse" data-target=".method_testAdicaoSimples .collapse">
+<h2>Verifica uma soma simples.</h2>
+<pre>testAdicaoSimples() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>name</th>
+<td>testAdicaoSimples</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+</div></div>
+</div>
 <a id="method_testMultiplicarDollarPorUmEscalar"></a><div class="element clickable method public method_testMultiplicarDollarPorUmEscalar" data-toggle="collapse" data-target=".method_testMultiplicarDollarPorUmEscalar .collapse">
 <h2>O objetivo do teste é validar se é possível multiplicar um Dollar por um
 escalar qualquer.</h2>
@@ -235,6 +258,60 @@ escalar qualquer.</h2>
 <h4>$resultado</h4>
 <code>int</code><p>Resultado da multiplicação</p>
 </div>
+</div></div>
+</div>
+<a id="method_testVerificarAAdicaoEmObjetosDollar"></a><div class="element clickable method public method_testVerificarAAdicaoEmObjetosDollar" data-toggle="collapse" data-target=".method_testVerificarAAdicaoEmObjetosDollar .collapse">
+<h2>Verifica a soma de dois objetos Dollar</h2>
+<pre>testVerificarAAdicaoEmObjetosDollar() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>name</th>
+<td>testVerificarAAdicaoEmObjetosDollar</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_testVerificarAConversaoDaSoma"></a><div class="element clickable method public method_testVerificarAConversaoDaSoma" data-toggle="collapse" data-target=".method_testVerificarAConversaoDaSoma .collapse">
+<h2>O teste verifica se a conversão na Expressao soma está correta.</h2>
+<pre>testVerificarAConversaoDaSoma() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>name</th>
+<td>testVerificarAConversaoDaSoma</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_testVerificarAConversaoDeDinheiro"></a><div class="element clickable method public method_testVerificarAConversaoDeDinheiro" data-toggle="collapse" data-target=".method_testVerificarAConversaoDeDinheiro .collapse">
+<h2>O teste verifica se a conversão de Dinheiro está correta.</h2>
+<pre>testVerificarAConversaoDeDinheiro() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>name</th>
+<td>testVerificarAConversaoDeDinheiro</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="method_testVerificarSeAMoedaDeDollarEIgualAUsd"></a><div class="element clickable method public method_testVerificarSeAMoedaDeDollarEIgualAUsd" data-toggle="collapse" data-target=".method_testVerificarSeAMoedaDeDollarEIgualAUsd .collapse">
@@ -313,6 +390,24 @@ iguais suas quantidades também são iguais.</h2>
 </table>
 </div></div>
 </div>
+<a id="method_testVerificarSeOMetodoMaisRetornaUmaSoma"></a><div class="element clickable method public method_testVerificarSeOMetodoMaisRetornaUmaSoma" data-toggle="collapse" data-target=".method_testVerificarSeOMetodoMaisRetornaUmaSoma .collapse">
+<h2>O teste verifica se o método Dinheiro::mais() retorna uma Expressao do tipo Soma.</h2>
+<pre>testVerificarSeOMetodoMaisRetornaUmaSoma() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>name</th>
+<td>testVerificarSeOMetodoMaisRetornaUmaSoma</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+</div></div>
+</div>
 <a id="method_testVerificarSeOsObjetosFrancoEDollarSaoDiferentes"></a><div class="element clickable method public method_testVerificarSeOsObjetosFrancoEDollarSaoDiferentes" data-toggle="collapse" data-target=".method_testVerificarSeOsObjetosFrancoEDollarSaoDiferentes .collapse">
 <h2>O objetivo do teste é verificar se objetos Franco e Dollar são diferentes.</h2>
 <pre>testVerificarSeOsObjetosFrancoEDollarSaoDiferentes() : void</pre>
@@ -338,7 +433,7 @@ iguais suas quantidades também são iguais.</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-05-05T00:32:55-03:00.<br></footer></div>
+            generated on 2013-05-30T19:56:30-03:00.<br></footer></div>
 </div>
 </body>
 </html>

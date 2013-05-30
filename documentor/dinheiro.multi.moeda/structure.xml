@@ -1,178 +1,457 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project version="2.0.0a12" title="">
-  <file path="Dinheiro.php" hash="4beb9c316bc5b9e7a5210e476e8014fa" package="Default">
-    <class final="false" abstract="false" namespace="global" line="18" package="Moedas\Dinheiro">
+  <file path="bancos\Banco.php" hash="7ac1e6e48cd521109cb1df62ea0bfca5" package="Default">
+    <class final="false" abstract="false" namespace="global" line="16" package="Bancos\Banco">
       <extends/>
-      <name>Dinheiro</name>
-      <full_name>\Dinheiro</full_name>
+      <name>Banco</name>
+      <full_name>\Banco</full_name>
       <docblock line="3">
-        <description>Classe para representar dinheiro.</description>
+        <description>Classe para representar um banco.</description>
         <long-description></long-description>
-        <tag line="3" name="abstract" description="A classe Dinheiro é uma classe criada para representar uma moeda.&#13;&#10;Ela será criada de acordo com as especificações do livro TDD:&#13;&#10;Desenvolvimento Guiado por testes, do Kent Beck."/>
-        <tag line="3" name="name" description="Dinheiro"/>
+        <tag line="3" name="abstract" description=""/>
+        <tag line="3" name="name" description="Banco"/>
         <tag line="3" name="category" description="Aplicacao"/>
-        <tag line="3" name="package" description="Moedas"/>
-        <tag line="3" name="subpackage" description="Dinheiro"/>
+        <tag line="3" name="package" description="Bancos"/>
+        <tag line="3" name="subpackage" description="Banco"/>
         <tag line="3" name="author" description="Elton D. de Oliveira &lt;elton.douglas.oliv@gmail.com&gt;"/>
         <tag line="3" name="license" description="GPL http://www.gnu.org/licenses/gpl.html"/>
         <tag line="3" name="link" description="documentação" link="Ver"/>
       </docblock>
-      <property final="false" static="false" visibility="protected" line="23" namespace="global" package="Default">
-        <name>$_quantidade</name>
-        <default></default>
-        <docblock line="20">
-          <description></description>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="28" package="Bancos\Banco">
+        <name>converter</name>
+        <full_name>converter</full_name>
+        <docblock line="18">
+          <description>Método de conversão entre os vários tipos de moedas.</description>
           <long-description></long-description>
-          <tag line="20" name="var" description="Valor que irá representar a quantidade do objeto." type="int">
-            <type by_reference="false">int</type>
+          <tag line="18" name="param" description="Expressão." type="\Expressao" variable="$expressao">
+            <type by_reference="false">\Expressao</type>
           </tag>
-        </docblock>
-      </property>
-      <property final="false" static="false" visibility="protected" line="27" namespace="global" package="Default">
-        <name>$_moeda</name>
-        <default></default>
-        <docblock line="24">
-          <description></description>
-          <long-description></long-description>
-          <tag line="24" name="var" description="String que representa o tipo de moeda." type="string">
+          <tag line="18" name="param" description="String de conversão." type="string" variable="$converterPara">
             <type by_reference="false">string</type>
           </tag>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="41" package="Moedas\Dinheiro">
-        <name>__construct</name>
-        <full_name>__construct</full_name>
-        <docblock line="29">
-          <description>Construtor</description>
-          <long-description></long-description>
-          <tag line="29" name="param" description="String que representa o tipo de moeda." type="string" variable="$moeda">
-            <type by_reference="false">string</type>
-          </tag>
-          <tag line="29" name="param" description="Valor com que irá definir quantos dollares o&#13;&#10;objeto criado irá conter." type="int" variable="$quantidade">
-            <type by_reference="false">int</type>
-          </tag>
-          <tag line="29" name="name" description="__construct"/>
-          <tag line="29" name="access" description="public"/>
-          <tag line="29" name="return" description="" type="void">
-            <type by_reference="false">void</type>
+          <tag line="18" name="name" description="converter"/>
+          <tag line="18" name="access" description="public"/>
+          <tag line="18" name="return" description="Dinheiro" type="\new">
+            <type by_reference="false">\new</type>
           </tag>
         </docblock>
-        <argument line="41">
-          <name>$moeda</name>
+        <argument line="28">
+          <name>$expressao</name>
           <default></default>
-          <type/>
+          <type>\Expressao</type>
         </argument>
-        <argument line="41">
-          <name>$quantidade</name>
-          <default>1</default>
-          <type/>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="56" package="Moedas\Dinheiro">
-        <name>dollar</name>
-        <full_name>dollar</full_name>
-        <docblock line="47">
-          <description>Método estático para criar uma instância da classe Dollar.</description>
-          <long-description></long-description>
-          <tag line="47" name="param" description="Valor que irá representar a quantidade do objeto." type="int" variable="$quantidade">
-            <type by_reference="false">int</type>
-          </tag>
-          <tag line="47" name="name" description="dollar"/>
-          <tag line="47" name="access" description="public"/>
-          <tag line="47" name="return" description="Dollar" type="\new">
-            <type by_reference="false">\new</type>
-          </tag>
-        </docblock>
-        <argument line="56">
-          <name>$quantidade</name>
-          <default>1</default>
-          <type/>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="72" package="Moedas\Dinheiro">
-        <name>equals</name>
-        <full_name>equals</full_name>
-        <docblock line="61">
-          <description>Verifica a igual entre duas instancias de Dinheiro que tenham sido criadas
-com a mesma quantidade.</description>
-          <long-description></long-description>
-          <tag line="61" name="param" description="Outra instância de Dinheiro cujo valor da quantidade&#13;&#10;será comparado com o valor da quantidade do Dinheiro atual." type="\Dinheiro" variable="$dinheiro">
-            <type by_reference="false">\Dinheiro</type>
-          </tag>
-          <tag line="61" name="name" description="equals"/>
-          <tag line="61" name="access" description="public"/>
-          <tag line="61" name="return" description="" type="\bollean">
-            <type by_reference="false">\bollean</type>
-          </tag>
-        </docblock>
-        <argument line="72">
-          <name>$dinheiro</name>
-          <default></default>
-          <type>\Dinheiro</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="87" package="Moedas\Dinheiro">
-        <name>franco</name>
-        <full_name>franco</full_name>
-        <docblock line="78">
-          <description>Método estático para criar uma instância da classe Franco.</description>
-          <long-description></long-description>
-          <tag line="78" name="param" description="Valor que irá representar a quantidade do objeto." type="int" variable="$quantidade">
-            <type by_reference="false">int</type>
-          </tag>
-          <tag line="78" name="name" description="franco"/>
-          <tag line="78" name="access" description="public"/>
-          <tag line="78" name="return" description="Franco" type="\new">
-            <type by_reference="false">\new</type>
-          </tag>
-        </docblock>
-        <argument line="87">
-          <name>$quantidade</name>
-          <default>1</default>
-          <type/>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="99" package="Moedas\Dinheiro">
-        <name>moeda</name>
-        <full_name>moeda</full_name>
-        <docblock line="92">
-          <description>Retorna uma string com o tipo de moeda do objeto.</description>
-          <long-description></long-description>
-          <tag line="92" name="name" description="moeda"/>
-          <tag line="92" name="access" description="public"/>
-          <tag line="92" name="return" description="" type="string">
-            <type by_reference="false">string</type>
-          </tag>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="115" package="Moedas\Dinheiro">
-        <name>multiplicarPor</name>
-        <full_name>multiplicarPor</full_name>
-        <docblock line="104">
-          <description>Retorna um novo objeto Dinheiro cuja quantidade será a do objeto
-dinheiro existente multiplicada pelo multiplicador passado.</description>
-          <long-description></long-description>
-          <tag line="104" name="param" description="Valor pelo qual a quantidade do objeto criado será&#13;&#10;multiplicada." type="int" variable="$multiplicador">
-            <type by_reference="false">int</type>
-          </tag>
-          <tag line="104" name="name" description="multiplicarPor"/>
-          <tag line="104" name="access" description="public"/>
-          <tag line="104" name="return" description="Dinheiro" type="\new">
-            <type by_reference="false">\new</type>
-          </tag>
-        </docblock>
-        <argument line="115">
-          <name>$multiplicador</name>
+        <argument line="28">
+          <name>$converterPara</name>
           <default></default>
           <type/>
         </argument>
       </method>
     </class>
     <parse_markers>
-      <error line="0" code="50007">No page-level DocBlock was found in file Dinheiro.php</error>
+      <error line="0" code="50007">No page-level DocBlock was found in file bancos\Banco.php</error>
     </parse_markers>
   </file>
+  <file path="interfaces\Expressao.php" hash="9c89067d0940e7407ff156b3f00551e7" package="Default">
+    <interface namespace="global" line="15" package="Interfaces\Expressao">
+      <name>Expressao</name>
+      <full_name>\Expressao</full_name>
+      <docblock line="2">
+        <description>Interface para representar uma expressão.</description>
+        <long-description></long-description>
+        <tag line="2" name="abstract" description=""/>
+        <tag line="2" name="name" description="Expressao"/>
+        <tag line="2" name="category" description="Aplicacao"/>
+        <tag line="2" name="package" description="Interfaces"/>
+        <tag line="2" name="subpackage" description="Expressao"/>
+        <tag line="2" name="author" description="Elton D. de Oliveira &lt;elton.douglas.oliv@gmail.com&gt;"/>
+        <tag line="2" name="license" description="GPL http://www.gnu.org/licenses/gpl.html"/>
+        <tag line="2" name="link" description="documentação" link="Ver"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="26" package="Interfaces\Expressao">
+        <name>converter</name>
+        <full_name>converter</full_name>
+        <docblock line="17">
+          <description>Método de conversão entre os vários tipos de moedas.</description>
+          <long-description></long-description>
+          <tag line="17" name="param" description="" type="string" variable="$converterPara">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="17" name="name" description="converter"/>
+          <tag line="17" name="access" description="public"/>
+          <tag line="17" name="return" description="Dinheiro" type="\new">
+            <type by_reference="false">\new</type>
+          </tag>
+        </docblock>
+        <argument line="26">
+          <name>$converterPara</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </interface>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file interfaces\Expressao.php</error>
+    </parse_markers>
+  </file>
+  <file path="interfaces\Soma.php" hash="a7c0a28d444a12230ac1b16372a3b55f" package="Default">
+    <class final="false" abstract="false" namespace="global" line="16" package="Interfaces\Soma">
+      <extends/>
+      <implements>\Expressao</implements>
+      <name>Soma</name>
+      <full_name>\Soma</full_name>
+      <docblock line="3">
+        <description>Classe para representar uma soma.</description>
+        <long-description></long-description>
+        <tag line="3" name="abstract" description="Classe para representar uma soma."/>
+        <tag line="3" name="name" description="Soma"/>
+        <tag line="3" name="category" description="Aplicacao"/>
+        <tag line="3" name="package" description="Interfaces"/>
+        <tag line="3" name="subpackage" description="Soma"/>
+        <tag line="3" name="author" description="Elton D. de Oliveira &lt;elton.douglas.oliv@gmail.com&gt;"/>
+        <tag line="3" name="license" description="GPL http://www.gnu.org/licenses/gpl.html"/>
+        <tag line="3" name="link" description="documentação" link="Ver"/>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="21" namespace="global" package="Default">
+        <name>$primeiraParcela</name>
+        <default></default>
+        <docblock line="18">
+          <description></description>
+          <long-description></long-description>
+          <tag line="18" name="var" description="Valor da primeira parcela." type="int|float">
+            <type by_reference="false">int</type>
+            <type by_reference="false">float</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="25" namespace="global" package="Default">
+        <name>$segundaParcela</name>
+        <default></default>
+        <docblock line="22">
+          <description></description>
+          <long-description></long-description>
+          <tag line="22" name="var" description="Valor da segund parcela." type="int|float">
+            <type by_reference="false">int</type>
+            <type by_reference="false">float</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="38" package="Interfaces\Soma">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="27">
+          <description>Construtor</description>
+          <long-description></long-description>
+          <tag line="27" name="param" description="Primeira parcela da soma" type="\Dinheiro" variable="$primeiraParcela">
+            <type by_reference="false">\Dinheiro</type>
+          </tag>
+          <tag line="27" name="param" description="Segunda parcela da soma" type="\Dinheiro" variable="$segundaParcela">
+            <type by_reference="false">\Dinheiro</type>
+          </tag>
+          <tag line="27" name="name" description="__construct"/>
+          <tag line="27" name="access" description="public"/>
+          <tag line="27" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="38">
+          <name>$primeiraParcela</name>
+          <default></default>
+          <type>\Dinheiro</type>
+        </argument>
+        <argument line="38">
+          <name>$segundaParcela</name>
+          <default></default>
+          <type>\Dinheiro</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="53" package="Interfaces\Soma">
+        <name>converter</name>
+        <full_name>converter</full_name>
+        <docblock line="44">
+          <description>Método de conversão entre os vários tipos de moedas.</description>
+          <long-description></long-description>
+          <tag line="44" name="param" description="" type="string" variable="$converterPara">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="44" name="name" description="converter"/>
+          <tag line="44" name="access" description="public"/>
+          <tag line="44" name="return" description="Dinheiro" type="\new">
+            <type by_reference="false">\new</type>
+          </tag>
+        </docblock>
+        <argument line="53">
+          <name>$converterPara</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file interfaces\Soma.php</error>
+    </parse_markers>
+  </file>
+  <file path="moedas\Dinheiro.php" hash="50d75de2c6891cd1ce1ffcf2d9bd1ea3" package="Default">
+    <include line="2" type="Require Once" package="Default">
+      <name>./config/autoload.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="global" line="19" package="Moedas\Dinheiro">
+      <extends/>
+      <implements>\Expressao</implements>
+      <name>Dinheiro</name>
+      <full_name>\Dinheiro</full_name>
+      <docblock line="4">
+        <description>Classe para representar dinheiro.</description>
+        <long-description></long-description>
+        <tag line="4" name="abstract" description="A classe Dinheiro é uma classe criada para representar uma moeda.&#13;&#10;Ela será criada de acordo com as especificações do livro TDD:&#13;&#10;Desenvolvimento Guiado por testes, do Kent Beck."/>
+        <tag line="4" name="name" description="Dinheiro"/>
+        <tag line="4" name="category" description="Aplicacao"/>
+        <tag line="4" name="package" description="Moedas"/>
+        <tag line="4" name="subpackage" description="Dinheiro"/>
+        <tag line="4" name="author" description="Elton D. de Oliveira &lt;elton.douglas.oliv@gmail.com&gt;"/>
+        <tag line="4" name="license" description="GPL http://www.gnu.org/licenses/gpl.html"/>
+        <tag line="4" name="link" description="documentação" link="Ver"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="24" namespace="global" package="Default">
+        <name>$_quantidade</name>
+        <default></default>
+        <docblock line="21">
+          <description></description>
+          <long-description></long-description>
+          <tag line="21" name="var" description="Valor que irá representar a quantidade do objeto." type="int">
+            <type by_reference="false">int</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="protected" line="28" namespace="global" package="Default">
+        <name>$_moeda</name>
+        <default></default>
+        <docblock line="25">
+          <description></description>
+          <long-description></long-description>
+          <tag line="25" name="var" description="String que representa o tipo de moeda." type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="42" package="Moedas\Dinheiro">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="30">
+          <description>Construtor</description>
+          <long-description></long-description>
+          <tag line="30" name="param" description="String que representa o tipo de moeda." type="string" variable="$moeda">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="30" name="param" description="Valor com que irá definir quantos dollares o&#13;&#10;objeto criado irá conter." type="int" variable="$quantidade">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="30" name="name" description="__construct"/>
+          <tag line="30" name="access" description="public"/>
+          <tag line="30" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="42">
+          <name>$moeda</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="42">
+          <name>$quantidade</name>
+          <default>1</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="55" package="Moedas\Dinheiro">
+        <name>getQuantidade</name>
+        <full_name>getQuantidade</full_name>
+        <docblock line="48">
+          <description>Retornar a quantidade de Dinheiro</description>
+          <long-description></long-description>
+          <tag line="48" name="name" description="getQuantidade"/>
+          <tag line="48" name="access" description="public"/>
+          <tag line="48" name="return" description="" type="int">
+            <type by_reference="false">int</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="67" package="Moedas\Dinheiro">
+        <name>getMoeda</name>
+        <full_name>getMoeda</full_name>
+        <docblock line="60">
+          <description>Retorna uma string com o tipo de moeda do objeto.</description>
+          <long-description></long-description>
+          <tag line="60" name="name" description="getMoeda"/>
+          <tag line="60" name="access" description="public"/>
+          <tag line="60" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="81" package="Moedas\Dinheiro">
+        <name>dollar</name>
+        <full_name>dollar</full_name>
+        <docblock line="72">
+          <description>Método estático para criar uma instância da classe Dollar.</description>
+          <long-description></long-description>
+          <tag line="72" name="param" description="Valor que irá representar a quantidade do objeto." type="int" variable="$quantidade">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="72" name="name" description="dollar"/>
+          <tag line="72" name="access" description="public"/>
+          <tag line="72" name="return" description="Dollar" type="\new">
+            <type by_reference="false">\new</type>
+          </tag>
+        </docblock>
+        <argument line="81">
+          <name>$quantidade</name>
+          <default>1</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="97" package="Moedas\Dinheiro">
+        <name>equals</name>
+        <full_name>equals</full_name>
+        <docblock line="86">
+          <description>Verifica a igual entre duas instancias de Dinheiro que tenham sido criadas
+com a mesma quantidade.</description>
+          <long-description></long-description>
+          <tag line="86" name="param" description="Outra instância de Dinheiro cujo valor da quantidade&#13;&#10;será comparado com o valor da quantidade do Dinheiro atual." type="\Dinheiro" variable="$dinheiro">
+            <type by_reference="false">\Dinheiro</type>
+          </tag>
+          <tag line="86" name="name" description="equals"/>
+          <tag line="86" name="access" description="public"/>
+          <tag line="86" name="return" description="" type="\bollean">
+            <type by_reference="false">\bollean</type>
+          </tag>
+        </docblock>
+        <argument line="97">
+          <name>$dinheiro</name>
+          <default></default>
+          <type>\Dinheiro</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="112" package="Moedas\Dinheiro">
+        <name>franco</name>
+        <full_name>franco</full_name>
+        <docblock line="103">
+          <description>Método estático para criar uma instância da classe Franco.</description>
+          <long-description></long-description>
+          <tag line="103" name="param" description="Valor que irá representar a quantidade do objeto." type="int" variable="$quantidade">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="103" name="name" description="franco"/>
+          <tag line="103" name="access" description="public"/>
+          <tag line="103" name="return" description="Franco" type="\new">
+            <type by_reference="false">\new</type>
+          </tag>
+        </docblock>
+        <argument line="112">
+          <name>$quantidade</name>
+          <default>1</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="128" package="Moedas\Dinheiro">
+        <name>multiplicarPor</name>
+        <full_name>multiplicarPor</full_name>
+        <docblock line="117">
+          <description>Retorna um novo objeto Dinheiro cuja quantidade será a do objeto
+dinheiro existente multiplicada pelo multiplicador passado.</description>
+          <long-description></long-description>
+          <tag line="117" name="param" description="Valor pelo qual a quantidade do objeto criado será&#13;&#10;multiplicada." type="int" variable="$multiplicador">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="117" name="name" description="multiplicarPor"/>
+          <tag line="117" name="access" description="public"/>
+          <tag line="117" name="return" description="Dinheiro" type="\new">
+            <type by_reference="false">\new</type>
+          </tag>
+        </docblock>
+        <argument line="128">
+          <name>$multiplicador</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="143" package="Moedas\Dinheiro">
+        <name>adicionarMais</name>
+        <full_name>adicionarMais</full_name>
+        <docblock line="133">
+          <description>Adiciona uma quantidade X ao Dinheiro corrente e retorna um novo objeto Dinheiro
+criado com a soma dos valores.</description>
+          <long-description></long-description>
+          <tag line="133" name="param" description="" type="\Dinheiro" variable="$dinheiroAdicionado">
+            <type by_reference="false">\Dinheiro</type>
+          </tag>
+          <tag line="133" name="name" description="adicionarMais"/>
+          <tag line="133" name="access" description="public"/>
+          <tag line="133" name="return" description="Dinheiro" type="\new">
+            <type by_reference="false">\new</type>
+          </tag>
+        </docblock>
+        <argument line="143">
+          <name>$dinheiroAdicionado</name>
+          <default></default>
+          <type>\Dinheiro</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="158" package="Moedas\Dinheiro">
+        <name>mais</name>
+        <full_name>mais</full_name>
+        <docblock line="148">
+          <description>Adiciona uma quantidade X ao Dinheiro corrente e retorna um novo objeto Soma
+criado com a soma dos valores.</description>
+          <long-description></long-description>
+          <tag line="148" name="param" description="" type="\Dinheiro" variable="$dinheiro">
+            <type by_reference="false">\Dinheiro</type>
+          </tag>
+          <tag line="148" name="name" description=""/>
+          <tag line="148" name="access" description="public"/>
+          <tag line="148" name="return" description="Soma" type="\new">
+            <type by_reference="false">\new</type>
+          </tag>
+        </docblock>
+        <argument line="158">
+          <name>$dinheiro</name>
+          <default></default>
+          <type>\Dinheiro</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="172" package="Moedas\Dinheiro">
+        <name>converter</name>
+        <full_name>converter</full_name>
+        <docblock line="163">
+          <description>Método criado para garantir o contrato com a a interface Expressao.</description>
+          <long-description></long-description>
+          <tag line="163" name="param" description="" type="string" variable="$converterPara">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="163" name="name" description="converter"/>
+          <tag line="163" name="access" description="public"/>
+          <tag line="163" name="return" description="" type="$this">
+            <type by_reference="false">$this</type>
+          </tag>
+        </docblock>
+        <argument line="172">
+          <name>$converterPara</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file moedas\Dinheiro.php</error>
+    </parse_markers>
+  </file>
+  <package name="Bancos" full_name="Bancos">
+    <package name="Banco" full_name="Bancos\Banco"/>
+  </package>
   <package name="Default" full_name="Default"/>
+  <package name="Interfaces" full_name="Interfaces">
+    <package name="Expressao" full_name="Interfaces\Expressao"/>
+    <package name="Soma" full_name="Interfaces\Soma"/>
+  </package>
   <package name="Moedas" full_name="Moedas">
     <package name="Dinheiro" full_name="Moedas\Dinheiro"/>
   </package>
